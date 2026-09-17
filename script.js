@@ -188,7 +188,7 @@ const blogPosts = {
     tag: "SEO & Marketing",
     title: "A technical SEO checklist that actually moves rankings",
     image: "assets/img/seo.webp",
-    date: "Jul 29, 2026",
+    date: "Sep 12, 2026",
     readTime: "8 min read",
     content: `
         <p><strong>Meta Description:</strong> A practical technical SEO checklist covering crawlability, site speed, structured data, and Core Web Vitals — the real factors that move search rankings in 2026.</p>
@@ -305,7 +305,7 @@ const blogPosts = {
     tag: "eCommerce",
     title: "What actually moves Shopify conversion rate",
     image: "assets/img/shopifyconversion.webp",
-    date: "Jul 10, 2026",
+    date: "Sep 10, 2026",
     readTime: "5 min read",
     content: `
         <p><strong>Meta Description:</strong> Discover the proven factors that actually improve Shopify conversion rates — from page speed and checkout flow to trust signals and product page optimization.</p>
@@ -590,7 +590,7 @@ const legalContent = {
             <h3>Data Security</h3>
             <p>We take reasonable technical and organizational measures to protect your information from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet is completely secure.</p>
             <h3>Your Rights</h3>
-            <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at hello@deeptech.agency.</p>
+            <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at info@deeptechtechnologies.com.</p>
             <h3>Changes to This Policy</h3>
             <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
             <p><em>This is placeholder text. Please replace with your finalized privacy policy before publishing.</em></p>

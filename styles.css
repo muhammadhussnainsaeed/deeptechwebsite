@@ -2254,6 +2254,12 @@ body.modal-open {
 }
 
 @media (max-width: 640px) {
+
+
+	.hero__media video {
+        object-position: 75% center; 
+    }
+
 	.header__inner {
 		padding: 0 1.2rem;
 	}
@@ -2511,7 +2517,8 @@ body.modal-open {
 }
 
 @media (max-width: 640px) {
-	.header__utility {
+	.header__utility .theme-toggle,
+	.header__utility .btn-quote {
 		display: none;
 	}
 }
