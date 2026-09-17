@@ -1,0 +1,985 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>DeepTech Technologies — Software Development &amp; Digital Marketing Agency</title>
+    <meta name="description"
+        content="DeepTech is a full service software development and digital marketing agency in Rawalpindi, building custom web, mobile, and eCommerce solutions and driving measurable growth for clients across the US, UAE and beyond.">
+    <meta name="author" content="DeepTech">
+    <meta name="theme-color" content="#e11d48">
+    <link rel="canonical" href="https://deeptechtechnologies.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deeptechtechnologies.com/">
+    <meta property="og:title" content="DeepTech — Software Development &amp; Digital Marketing Agency">
+    <meta property="og:description" content="DeepTech is a full service software development and digital marketing agency in Rawalpindi, building custom web, mobile, and eCommerce solutions and driving measurable growth for clients across the US, UAE, and beyond.">
+    <meta property="og:image" content="assets/img/og-image.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://deeptechtechnologies.com/">
+    <meta name="twitter:title" content="DeepTech — Software Development &amp; Digital Marketing Agency">
+    <meta name="twitter:description" content="DeepTech is a full service software development and digital marketing agency in Rawalpindi, building custom web, mobile, and eCommerce solutions and driving measurable growth for clients across the US, UAE, and beyond.">
+    <meta name="twitter:image" content="assets/img/og-image.webp">
+
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23e11d48'/%3E%3C/svg%3E">
+
+    <script>
+        (function () {
+            var saved = localStorage.getItem("deeptech-theme");
+            document.documentElement.setAttribute("data-theme", saved === "dark" ? "dark" : "light");
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ===================== HEADER ===================== -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a class="logo" href="#top" aria-label="DeepTech home">
+                <img class="logo__img" src="assets/img/deeptech-logo.webp" alt="DeepTech">
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#blog">Blog</a>
+                <a href="#testimonials">Clients</a>
+            </nav>
+
+            <div class="header__utility">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                    </svg>
+                    <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+                    </svg>
+                </button>
+
+                <a class="btn-quote" href="#cta">
+                    <span class="btn-quote__primary">Get a Free Quote</span>
+                    <span class="btn-quote__secondary">Free · 24h Response</span>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"
+                    aria-controls="mobileNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#blog">Blog</a>
+        <a href="#testimonials">Clients</a>
+        <a href="#cta" class="mobile-nav__cta">Get a Free Quote</a>
+        <button class="mobile-nav__theme" id="themeToggleMobile" type="button">
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4" />
+                <path
+                    d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            </svg>
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+            </svg>
+            <span class="mobile-nav__theme-label">Switch to dark mode</span>
+        </button>
+    </nav>
+
+
+    <main id="top">
+        <!-- ===================== HERO ===================== -->
+        <section class="hero">
+            <div class="hero__media">
+                <video id="heroVideo" autoplay muted loop playsinline webkit-playsinline="true" preload="auto"
+                    poster="assets/img/hero-deeptech.webp" aria-hidden="true" disableRemotePlayback>
+                    <source src="assets/img/hero-deeptech.mp4" type="video/mp4">
+                </video>
+                <div class="hero__fade-left"></div>
+                <div class="hero__fade-bottom"></div>
+            </div>
+
+            <div class="hero__content">
+                <div class="hero__top">
+                    <div class="hero__intro">
+                        <div class="hero__label hero__intro-line" id="heroLabel">
+                            <span id="heroLabelLine1"></span><br>
+                            <span id="heroLabelLine2"></span><span class="hero__cursor" id="heroLabelCursor"></span>
+                        </div>
+
+                        <p class="hero__typewriter hero__intro-line" id="heroTypewriter">
+                            <span id="heroLine1"></span><br>
+                            <span id="heroLine2"></span><span class="hero__cursor" id="heroCursor"></span>
+                        </p>
+                    </div>
+
+                    <div class="hero__pills" id="heroPills">
+                        <div class="hero__pills-row">
+                            <a class="pill" href="#cta">Get a free quote</a>
+                            <a class="pill" href="#portfolio">View portfolio</a>
+                        </div>
+                        <div class="hero__pills-row">
+                            <button class="pill pill--outline" id="pillEmail" type="button"
+                                data-email="hello@deeptech.agency">
+                                <span>Reach us: <span class="pill__underline">hello@deeptech.agency</span></span>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                                    <rect x="3" y="0" width="8" height="8" rx="1" stroke="currentColor"
+                                        stroke-width="1.2" fill="none" />
+                                    <rect x="0" y="3" width="8" height="8" rx="1" stroke="currentColor"
+                                        stroke-width="1.2" fill="none" />
+                                </svg>
+                            </button>
+                            <a class="pill" href="#cta">Book a call</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proof">
+                    <div class="proof__avatars">
+                        <img src="assets/img/Ahmed-Fashion.webp" alt="">
+                        <img src="assets/img/flylop.webp" alt="">
+                        <img src="assets/img/estimationcenter.webp" alt="">
+                        <img src="assets/img/Gta-House-Signs.webp" alt="">
+                        <img src="assets/img/leebaz-e-zarq.webp" alt="">
+                    </div>
+                    <div class="proof__text">
+                        <div class="proof__stars" aria-hidden="true"></div>
+                        <span>Trusted by <strong>50+ businesses</strong> worldwide</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TRUST BAR ===================== -->
+        <section class="trust">
+            <div class="trust__grid">
+                <div class="trust__item reveal">
+                    <svg class="trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg>
+                    <div class="trust__title">Custom-Built</div>
+                    <div class="trust__sub">No rigid templates</div>
+                    <div class="trust__tooltip">
+                        Every engagement is architected around your operational
+                        requirements: scalable, custom, and never off-the-shelf.
+                    </div>
+                </div>
+                <div class="trust__item reveal" data-delay="1">
+                    <svg class="trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="6" />
+                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                    </svg>
+                    <div class="trust__title">Global Reach</div>
+                    <div class="trust__sub">US · UAE · beyond</div>
+                    <div class="trust__tooltip">
+                        Based in Rawalpindi, serving local and international
+                        clients across the US, UAE and beyond.
+                    </div>
+                </div>
+                <div class="trust__item reveal" data-delay="2">
+                    <svg class="trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    <div class="trust__title">48h Quote</div>
+                    <div class="trust__sub">Detailed & itemized</div>
+                    <div class="trust__tooltip">
+                        Share your requirements and you'll receive a fully detailed,
+                        no-obligation estimate within 48 hours.
+                    </div>
+                </div>
+                <div class="trust__item reveal" data-delay="3">
+                    <svg class="trust__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                    <div class="trust__title">Data-Driven</div>
+                    <div class="trust__sub">Measurable ROI</div>
+                    <div class="trust__tooltip">
+                        Transparent weekly or monthly progress reports keep every
+                        engagement accountable to real outcomes.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ABOUT ===================== -->
+        <section class="about" id="about">
+            <div class="about__grid">
+                <div class="about__left reveal">
+                    <span class="eyebrow">— Who we are</span>
+                    <h2 class="about__title">
+                        Engineering trust,<br>not just <span class="crimson">code.</span>
+                    </h2>
+                    <p class="about__lead">
+                        DeepTech is a full-service software development and digital
+                        marketing agency based in the Rawalpindi area,
+                        serving local and international clients across the US, UAE
+                        and beyond. Our core mission is to handle the technical
+                        complexities of digital growth so you can focus on running
+                        your business.
+                    </p>
+                    <p class="about__lead">
+                        We prioritize data-driven strategies, measurable ROI and
+                        custom, scalable architectures over rigid, templated
+                        solutions, positioning ourselves as a reliable, transparent
+                        partner rather than just an outsourced vendor.
+                    </p>
+
+                    <div class="about__points">
+                        <div class="about__point">
+                            <span class="about__point-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 20h9" />
+                                    <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+                                </svg>
+                            </span>
+                            <div>
+                                <div class="about__point-title">Strictly custom solutions</div>
+                                <div class="about__point-sub">Built entirely around your operational requirements.</div>
+                            </div>
+                        </div>
+                        <div class="about__point">
+                            <span class="about__point-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 3v18h18" />
+                                    <path d="m19 9-5 5-4-4-3 3" />
+                                </svg>
+                            </span>
+                            <div>
+                                <div class="about__point-title">Data-driven accountability</div>
+                                <div class="about__point-sub">Transparent weekly or monthly progress reports.</div>
+                            </div>
+                        </div>
+                        <div class="about__point">
+                            <span class="about__point-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                            </span>
+                            <div>
+                                <div class="about__point-title">Continuous support</div>
+                                <div class="about__point-sub">Dynamic payment plans and 24/7 consultancy.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__right">
+                    <div class="stat-grid">
+                        <div class="stat-card reveal">
+                            <div class="stat-card__num">+50<span class="crimson">+</span></div>
+                            <div class="stat-card__label">Businesses served</div>
+                        </div>
+                        <div class="stat-card reveal" data-delay="1">
+                            <div class="stat-card__num">3<span class="crimson">+</span></div>
+                            <div class="stat-card__label">Countries reached</div>
+                        </div>
+                        <div class="stat-card reveal" data-delay="2">
+                            <div class="stat-card__num">48<span class="crimson">h</span></div>
+                            <div class="stat-card__label">Avg. quote turnaround</div>
+                        </div>
+                        <div class="stat-card reveal" data-delay="3">
+                            <div class="stat-card__num">24<span class="crimson">/7</span></div>
+                            <div class="stat-card__label">Support &amp; consultancy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SERVICES ===================== -->
+        <section class="services" id="services">
+            <div class="services__grid">
+                <div class="services__left">
+                    <span class="eyebrow">— What we do</span>
+                    <h2 class="services__title">
+                        Full-service<br>growth, <span class="crimson">engineered.</span>
+                    </h2>
+                    <p class="services__lead">
+                        Three core pillars, one accountable partner. We handle the
+                        technical complexity of digital growth so you can focus on
+                        running your business backed by transparent, measurable
+                        reporting.
+                    </p>
+
+                    <div class="compare">
+                        <div class="compare__head">
+                            <span>What's included</span>
+                            <span>Starter</span><span>Growth</span><span>Enterprise</span>
+                        </div>
+                        <details class="compare__row" open>
+                            <summary>
+                                Custom web development <span class="chev">›</span>
+                            </summary>
+                            <div class="compare__marks">
+                                <i class="yes"></i><i class="yes"></i><i class="yes"></i>
+                            </div>
+                        </details>
+                        <details class="compare__row">
+                            <summary>
+                                eCommerce (Shopify) &amp; CMS <span class="chev">›</span>
+                            </summary>
+                            <div class="compare__marks">
+                                <i class="no"></i><i class="yes"></i><i class="yes"></i>
+                            </div>
+                        </details>
+                        <details class="compare__row">
+                            <summary>
+                                iOS, Android &amp; cross-platform apps <span class="chev">›</span>
+                            </summary>
+                            <div class="compare__marks">
+                                <i class="no"></i><i class="part"></i><i class="yes"></i>
+                            </div>
+                        </details>
+                        <details class="compare__row">
+                            <summary>
+                                Full SEO, PPC &amp; social management <span class="chev">›</span>
+                            </summary>
+                            <div class="compare__marks">
+                                <i class="no"></i><i class="no"></i><i class="yes"></i>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="services__right">
+                    <!-- Featured -->
+                    <article class="svc-card svc-card--featured reveal">
+                        <div class="svc-card__top">
+                            <span class="svc-card__tag">Most requested</span>
+                            <h3 class="svc-card__name">Software Engineering &amp; Development</h3>
+                            <p class="svc-card__desc">
+                                End-to-end development solutions: High-performance,
+                                custom-built applications tailored to your requirements,
+                                engineered to scale.
+                            </p>
+                        </div>
+                        <details class="incl">
+                            <summary>What's included <span class="chev">›</span></summary>
+                            <ul>
+                                <li>Full-stack web development on modern architectures</li>
+                                <li>Custom Shopify store development for retail growth</li>
+                                <li>Bespoke WordPress development for content-heavy sites</li>
+                                <li>Native iOS &amp; Android app development</li>
+                                <li>Cross-platform apps with Flutter &amp; React Native</li>
+                            </ul>
+                        </details>
+                        <a class="svc-card__cta" href="#cta">Start a build <span class="arrow">→</span></a>
+                    </article>
+
+                    <article class="svc-card reveal" data-delay="1">
+                        <div class="svc-card__top">
+                            <h3 class="svc-card__name">Design &amp; User Experience</h3>
+                            <p class="svc-card__desc">
+                                Technical performance paired with compelling visual and
+                                interactive design, built to capture attention and
+                                convert.
+                            </p>
+                        </div>
+                        <details class="incl">
+                            <summary>What's included <span class="chev">›</span></summary>
+                            <ul>
+                                <li>Responsive UI/UX &amp; web design</li>
+                                <li>User journey mapping to drive conversion</li>
+                                <li>Graphic design &amp; brand identity</li>
+                                <li>Core messaging &amp; visual storytelling</li>
+                            </ul>
+                        </details>
+                        <a class="svc-card__cta" href="#cta">Request a quote <span class="arrow">→</span></a>
+                    </article>
+
+                    <article class="svc-card reveal" data-delay="2">
+                        <div class="svc-card__top">
+                            <h3 class="svc-card__name">Digital Marketing &amp; SEO</h3>
+                            <p class="svc-card__desc">
+                                A powerful online presence that attracts targeted audiences
+                                and generates high-quality leads.
+                            </p>
+                        </div>
+                        <details class="incl">
+                            <summary>What's included <span class="chev">›</span></summary>
+                            <ul>
+                                <li>Technical &amp; on-page SEO, keyword research</li>
+                                <li>Link building, social signals &amp; reputation management</li>
+                                <li>Influencer outreach &amp; content marketing</li>
+                                <li>Social media management &amp; PPC campaigns</li>
+                            </ul>
+                        </details>
+                        <a class="svc-card__cta" href="#cta">Book a strategy call <span class="arrow">→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PORTFOLIO ===================== -->
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio__head">
+                <div>
+                    <span class="eyebrow">— Selected work</span>
+                    <h2 class="portfolio__title">
+                        Case studies, not just <span class="crimson">claims.</span>
+                    </h2>
+                </div>
+                <p class="portfolio__hint">Drag to explore →</p>
+            </div>
+
+            <div class="portfolio__track no-scrollbar" id="pfTrack">
+                <article class="tcard" data-project="retail-shopify" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="tcard__img">
+                        <img src="assets/img/GM-official.webp" alt="Retail Shopify Replatform">
+                        <span class="tcard__restored">Launched</span>
+                    </div>
+                    <div class="tcard__roi">Revenue PKR 2M+/yr</div>
+                    <div class="tcard__foot">
+                        <div class="tcard__name">FinTech Platform & Trading Academy Build</div>
+                        <div class="tcard__stats">
+                            <span>Delivered in 9 weeks</span><span>·</span><span>Course Enrollments +45%</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tcard" data-project="ahmed-fashion" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="tcard__img">
+                        <img src="assets/img/ahmedfashion.webp" alt="Ahmed Fashion Wholesale E-Commerce">
+                        <span class="tcard__restored">Launched</span>
+                    </div>
+                    <div class="tcard__roi">Wholesale Inquiries +210%</div>
+                    <div class="tcard__foot">
+                        <div class="tcard__name">Wholesale Fashion E-Commerce</div>
+                        <div class="tcard__stats">
+                            <span>Delivered in 6 weeks</span><span>·</span><span>B2B WooCommerce</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tcard" data-project="estimation-center" tabindex="0" role="button"
+                    aria-haspopup="dialog">
+                    <div class="tcard__img">
+                        <img src="assets/img/estimationcenter.webp"
+                            alt="Estimation Center Construction Takeoff Services">
+                        <span class="tcard__restored">Launched</span>
+                    </div>
+                    <div class="tcard__roi">Quote Requests +150%</div>
+                    <div class="tcard__foot">
+                        <div class="tcard__name">B2B Construction Estimating Platform</div>
+                        <div class="tcard__stats">
+                            <span>Delivered in 5 weeks</span><span>·</span><span>Lead Generation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tcard" data-project="halal-guidelines" tabindex="0" role="button"
+                    aria-haspopup="dialog">
+                    <div class="tcard__img">
+                        <img src="assets/img/halalguidelines.webp" alt="Halal Guidelines Certification Services">
+                        <span class="tcard__restored">Launched</span>
+                    </div>
+                    <div class="tcard__roi">Consultation Leads +180%</div>
+                    <div class="tcard__foot">
+                        <div class="tcard__name">B2B Certification Consulting Platform</div>
+                        <div class="tcard__stats">
+                            <span>Delivered in 4 weeks</span><span>·</span><span>Lead Generation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tcard" data-project="bilal-toys" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="tcard__img">
+                        <img src="assets/img/bilaltoys.webp" alt="Bilal Toys E-Commerce Store">
+                        <span class="tcard__restored">Launched</span>
+                    </div>
+                    <div class="tcard__roi">Online Sales +120%</div>
+                    <div class="tcard__foot">
+                        <div class="tcard__name">B2C Toy E-Commerce Platform</div>
+                        <div class="tcard__stats">
+                            <span>Delivered in 4 weeks</span><span>·</span><span>Retail E-Commerce</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="tcard" data-project="damascus-depot" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="tcard__img">
+                        <img src="assets/img/damascusdepot.webp" alt="Damascus Depot Custom Knives E-Commerce">
+                        <span class="tcard__restored">Launched</span>
+                    </div>
+                    <div class="tcard__roi">Global Sales +135%</div>
+                    <div class="tcard__foot">
+                        <div class="tcard__name">Premium Cutlery E-Commerce Platform</div>
+                        <div class="tcard__stats">
+                            <span>Delivered in 5 weeks</span><span>·</span><span>Global Retail</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+
+        <!-- ===================== PORTFOLIO MODAL ===================== -->
+        <div class="blog-modal" id="portfolioModal" aria-hidden="true">
+            <div class="blog-modal__backdrop" data-close="1"></div>
+            <div class="blog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="portfolioModalTitle">
+                <button class="blog-modal__close" type="button" data-close="1" aria-label="Close case study">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+                <div class="blog-modal__img">
+                    <img id="portfolioModalImg" src="" alt="">
+                </div>
+                <div class="blog-modal__body">
+                    <span class="blog-modal__tag" id="portfolioModalTag"></span>
+                    <h2 class="blog-modal__title" id="portfolioModalTitle"></h2>
+                    <div class="blog-modal__meta" id="portfolioModalMeta"></div>
+                    <div class="blog-modal__content" id="portfolioModalContent"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== BLOG ===================== -->
+        <section class="blog" id="blog">
+            <div class="blog__head">
+                <div>
+                    <span class="eyebrow">— Insights</span>
+                    <h2 class="blog__title">
+                        From the <span class="crimson">blog.</span>
+                    </h2>
+                </div>
+                <p class="blog__hint">Drag to explore →</p>
+            </div>
+
+            <div class="blog__track no-scrollbar" id="blogTrack">
+                <article class="blog-card reveal" data-post="custom-architecture" tabindex="0" role="button"
+                    aria-haspopup="dialog">
+                    <div class="blog-card__img">
+                        <img src="assets/img/custom_software.webp" alt="Why custom architecture beats templated builds">
+                    </div>
+                    <span class="blog-card__tag">Development</span>
+                    <h3 class="blog-card__title">Why custom architecture beats templated builds</h3>
+                    <p class="blog-card__excerpt">
+                        Discover why custom software architecture outperforms templated builds in
+                        scalability, security, and long-term ROI. A complete guide for businesses
+                        choosing between custom development and template-based solutions.
+                    </p>
+                    <div class="blog-card__meta">
+                        <span>Sep 14, 2026</span><span>·</span><span>4 min read</span>
+                    </div>
+                    <a class="blog-card__cta" href="#" data-post="custom-architecture">Read the post <span
+                            class="arrow">→</span></a>
+                </article>
+
+                <article class="blog-card reveal" data-delay="1" data-post="seo-checklist" tabindex="0" role="button"
+                    aria-haspopup="dialog">
+                    <div class="blog-card__img">
+                        <img src="assets/img/SEO.webp" alt="A technical SEO checklist that actually moves rankings">
+                    </div>
+                    <span class="blog-card__tag">SEO &amp; Marketing</span>
+                    <h3 class="blog-card__title">A technical SEO checklist that actually moves rankings</h3>
+                    <p class="blog-card__excerpt">
+                        Discover the proven factors that actually improve Shopify conversion rates
+                        from page speed and checkout flow to trust signals and product page optimization.
+                    </p>
+                    <div class="blog-card__meta">
+                        <span>Jul 29, 2026</span><span>·</span><span>8 min read</span>
+                    </div>
+                    <a class="blog-card__cta" href="#" data-post="seo-checklist">Read the post <span
+                            class="arrow">→</span></a>
+                </article>
+
+                <article class="blog-card reveal" data-delay="2" data-post="shopify-conversion" tabindex="0"
+                    role="button" aria-haspopup="dialog">
+                    <div class="blog-card__img">
+                        <img src="assets/img/shopifyconversion.webp" alt="What actually moves Shopify conversion rate">
+                    </div>
+                    <span class="blog-card__tag">eCommerce</span>
+                    <h3 class="blog-card__title">What actually moves Shopify conversion rate</h3>
+                    <p class="blog-card__excerpt">
+                        Discover the proven factors that actually improve Shopify conversion rates
+                        from page speed and checkout flow to trust signals and product page optimization.
+                    </p>
+                    <div class="blog-card__meta">
+                        <span>Jul 10, 2026</span><span>·</span><span>5 min read</span>
+                    </div>
+                    <a class="blog-card__cta" href="#" data-post="shopify-conversion">Read the post <span
+                            class="arrow">→</span></a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===================== BLOG MODAL ===================== -->
+        <div class="blog-modal" id="blogModal" aria-hidden="true">
+            <div class="blog-modal__backdrop" data-close="1"></div>
+            <div class="blog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="blogModalTitle">
+                <button class="blog-modal__close" type="button" data-close="1" aria-label="Close article">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+                <div class="blog-modal__img">
+                    <img id="blogModalImg" src="" alt="">
+                </div>
+                <div class="blog-modal__body">
+                    <span class="blog-modal__tag" id="blogModalTag"></span>
+                    <h2 class="blog-modal__title" id="blogModalTitle"></h2>
+                    <div class="blog-modal__meta" id="blogModalMeta"></div>
+                    <div class="blog-modal__content" id="blogModalContent"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ===================== LEGAL MODAL ===================== -->
+        <div class="blog-modal" id="legalModal" aria-hidden="true">
+            <div class="blog-modal__backdrop" data-close="1"></div>
+            <div class="blog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+                <button class="blog-modal__close" type="button" data-close="1" aria-label="Close">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+                <div class="blog-modal__body legal-modal__body">
+                    <h2 class="blog-modal__title" id="legalModalTitle"></h2>
+                    <div class="blog-modal__meta" id="legalModalMeta"></div>
+                    <div class="blog-modal__content" id="legalModalContent"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== PROCESS / TESTIMONIALS ===================== -->
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials__head">
+                <div>
+                    <span class="eyebrow" id="process">— The verdict</span>
+                    <h2 class="testimonials__title">
+                        Clients don't<br>whisper. They <span class="crimson">rave.</span>
+                    </h2>
+                </div>
+                <p class="testimonials__hint">Drag to explore →</p>
+            </div>
+
+            <div class="testimonials__track no-scrollbar" id="tqTrack">
+                <article class="tquote">
+                    <div class="tquote__stars" aria-hidden="true"></div>
+                    <blockquote>
+                        "Working with DeepTech was a fantastic experience. They understood our requirements perfectly
+                        and built a website that is both professional and user-friendly. The entire project was
+                        completed efficiently, on time, and within our budget. Highly recommended."
+                    </blockquote>
+                    <div class="tquote__person">
+                        <img src="assets/img/estimationcenter.webp" alt="Estimation Center">
+                        <div>
+                            <div class="tquote__name">Muhammad Faraz</div>
+                            <div class="tquote__role">CEO, Estimation Center</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tquote">
+                    <div class="tquote__stars" aria-hidden="true"></div>
+                    <blockquote>
+                        "DeepTech created a beautiful and functional website that truly represents our brand. Their
+                        attention to detail, timely delivery, and cost-effective approach made the entire process smooth
+                        and hassle-free. I would gladly recommend their services to others"
+                    </blockquote>
+                    <div class="tquote__person">
+                        <img src="assets/img/Ahmed-Fashion.webp" alt="Ahmed Fashion">
+                        <div>
+                            <div class="tquote__name">Muhammad Mateem Afzal</div>
+                            <div class="tquote__role">CEO, Ahmed Fashion</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tquote">
+                    <div class="tquote__stars" aria-hidden="true"></div>
+                    <blockquote>
+                        "DeepTech provided an exceptional website development experience from start to finish. They
+                        delivered a polished, high-quality website within our timeline and budget while maintaining
+                        excellent communication throughout the project. I would confidently recommend DeepTech."
+                    </blockquote>
+                    <div class="tquote__person">
+                        <img src="assets/img/Aspraa-Impex.webp" alt="Asraa Impex">
+                        <div>
+                            <div class="tquote__name">Khubab Cheema</div>
+                            <div class="tquote__role">CEO, Asraa Impex</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tquote">
+                    <div class="tquote__stars" aria-hidden="true"></div>
+                    <blockquote>
+                        "Working with DeepTech was a fantastic experience. Their professionalism, attention to detail,
+                        and technical expertise resulted in a website that exceeded our expectations I highly recommend
+                        DeepTech for anyone seeking reliable web development services"
+                    </blockquote>
+                    <div class="tquote__person">
+                        <img src="assets/img/leebaz-e-zarq.webp" alt="LEEBAZ-E- ZARQ">
+                        <div>
+                            <div class="tquote__name">Hifza Rehan</div>
+                            <div class="tquote__role">CEO, LEEBAZ-E- ZARQ</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tquote">
+                    <div class="tquote__stars" aria-hidden="true"></div>
+                    <blockquote>
+                        "I had a website made by DeepTech which was perfectly executed and well done. When the time came
+                        for my second website, he delivered exceptional service once again. All this was done under
+                        budget and within my time constraint. I would 100% recommend DeepTech"
+                    </blockquote>
+                    <div class="tquote__person">
+                        <img src="assets/img/Gta-House-Signs.webp" alt="GTA Signs">
+                        <div>
+                            <div class="tquote__name">Salar Malhi</div>
+                            <div class="tquote__role">CEO, GTA Signs</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tquote">
+                    <div class="tquote__stars" aria-hidden="true"></div>
+                    <blockquote>
+                        "I had a website made by DeepTech which was perfectly executed and well done. When the time came
+                        for my second website, they delivered exceptional service once again. Everything was completed
+                        within budget and on time. I would 100% recommend DeepTech"
+                    </blockquote>
+                    <div class="tquote__person">
+                        <img src="assets/img/flylop.webp" alt="Flylop">
+                        <div>
+                            <div class="tquote__name">Rehman Ali</div>
+                            <div class="tquote__role">CEO, Flylop</div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tquote">
+                    <div class="tquote__stars" aria-hidden="true"></div>
+                    <blockquote>
+                        "DeepTech delivered our website exactly as promised with outstanding quality and
+                        professionalism. The project stayed within budget, met every deadline, and exceeded our
+                        expectations. I would highly recommend DeepTech to anyone looking for reliable web development
+                        services"
+                    </blockquote>
+                    <div class="tquote__person">
+                        <img src="assets/img/gmofficial.webp" alt="GM Official Services">
+                        <div>
+                            <div class="tquote__name">Gulam Mustafa</div>
+                            <div class="tquote__role">CEO, GM Official Services</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===================== FINAL CTA ===================== -->
+        <section class="cta" id="cta">
+            <div class="cta__inner reveal">
+                <h2 class="cta__title">
+                    Your growth is <span class="muted">waiting.</span><br>Let's build it
+                    <span class="muted">together.</span>
+                </h2>
+                <p class="cta__sub">
+                    Free, itemized estimate within 48 hours. No obligation. Dynamic
+                    payment plans available.
+                </p>
+                <div class="cta__buttons">
+                    <a class="btn btn--black" href="tel:+923000000000">Call DeepTech</a>
+                    <a class="btn btn--white-solid" href="mailto:hello@deeptech.agency">Request a quote</a>
+                </div>
+                <div class="cta__badges">
+                    <span>Full-Stack Dev</span><span>·</span><span>SEO &amp; PPC</span><span>·</span><span>24/7
+                        Support</span><span>·</span><span>Global Clients</span>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__top">
+                    <div class="footer__brand">
+                        <a class="logo" href="#top" aria-label="DeepTech home">
+                            <img class="logo__img" src="assets/img/deeptech-logo.webp" alt="DeepTech">
+                        </a>
+                        <p class="footer__tagline">
+                            A full-service software development and digital marketing agency
+                            engineering growth for businesses across the US, UAE, and beyond.
+                        </p>
+                        <div class="footer__socials">
+                            <a class="footer__social" href="mailto:hello@deeptech.agency" aria-label="Email DeepTech">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M2 4h20c.552 0 1 .448 1 1v14c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V5c0-.552.448-1 1-1zm1.4 2L12 12.5 20.6 6H3.4zM3 8.2V18h18V8.2l-9 6.9-9-6.9z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://www.linkedin.com/company/deeptechdigital/"
+                                target="_blank" rel="noopener" aria-label="DeepTech on LinkedIn">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://www.facebook.com/deeptechtechnologies/" target="_blank"
+                                rel="noopener" aria-label="DeepTech on Facebook">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0 23.4.6 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.098 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.674V1.326C24 .6 23.4 0 22.675 0z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://www.instagram.com/deeptech.technologies"
+                                target="_blank" rel="noopener" aria-label="DeepTech on Instagram">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://wa.me/923350535305" target="_blank" rel="noopener"
+                                aria-label="Message DeepTech on WhatsApp">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.868-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.001 2C6.478 2 2 6.478 2 12.001c0 1.798.475 3.483 1.302 4.949L2.05 21.951l5.09-1.322A9.955 9.955 0 0 0 12.001 22C17.523 22 22 17.523 22 12.001 22 6.478 17.523 2 12.001 2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Quick Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#cta">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">Mobile App Development</a></li>
+                            <li><a href="#services">eCommerce &amp; CMS</a></li>
+                            <li><a href="#services">UI/UX &amp; Branding</a></li>
+                            <li><a href="#services">SEO &amp; Digital Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col footer__col--wide">
+                        <h4 class="footer__heading">Get in Touch</h4>
+                        <ul class="footer__contact">
+                            <li>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span>Rawalpindi, Pakistan</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="m22 6-10 7L2 6" />
+                                </svg>
+                                <a href="mailto:hello@deeptech.agency">hello@deeptech.agency</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+                                </svg>
+                                <a href="https://wa.me/923350535305" target="_blank" rel="noopener">+92 335 0535305</a>
+                            </li>
+                        </ul>
+
+                        <form class="footer__newsletter" id="newsletterForm">
+                            <label class="footer__newsletter-label" for="newsletterEmail">Subscribe for growth
+                                insights</label>
+                            <div class="footer__newsletter-row">
+                                <input type="email" id="newsletterEmail" name="email" placeholder="you@company.com"
+                                    required autocomplete="email">
+                                <button type="submit" aria-label="Subscribe">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14" />
+                                        <path d="m13 6 6 6-6 6" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="footer__newsletter-note" id="newsletterNote"></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <span>© 2026 DeepTech. All rights reserved.</span>
+                    <div class="footer__legal">
+                        <a href="#" data-legal="privacy">Privacy Policy</a><span>·</span><a href="#"
+                            data-legal="terms">Terms of Service</a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <!-- ===================== COOKIE BANNER ===================== -->
+        <div class="cookie-banner" id="cookieBanner" aria-hidden="true">
+            <div class="cookie-banner__inner">
+                <p class="cookie-banner__text">
+                    We use cookies to improve your experience and analyze site traffic. 
+                    By clicking "Accept", you consent to our use of cookies. 
+                    Read our <a href="#" data-legal="privacy" class="cookie-banner__link">Privacy Policy</a>.
+                </p>
+                <div class="cookie-banner__actions">
+                    <button type="button" class="cookie-btn cookie-btn--decline" id="declineCookies">Decline</button>
+                    <button type="button" class="cookie-btn cookie-btn--accept" id="acceptCookies">Accept</button>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
