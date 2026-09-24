@@ -185,12 +185,12 @@ const blogPosts = {
     `,
     },
     "seo-checklist": {
-    tag: "SEO & Marketing",
-    title: "A technical SEO checklist that actually moves rankings",
-    image: "assets/img/seo.webp",
-    date: "Sep 12, 2026",
-    readTime: "8 min read",
-    content: `
+        tag: "SEO & Marketing",
+        title: "A technical SEO checklist that actually moves rankings",
+        image: "assets/img/SEO.webp",
+        date: "Sep 12, 2026",
+        readTime: "8 min read",
+        content: `
         <p><strong>Meta Description:</strong> A practical technical SEO checklist covering crawlability, site speed, structured data, and Core Web Vitals — the real factors that move search rankings in 2026.</p>
         
         <h2>Introduction</h2>
@@ -300,14 +300,14 @@ const blogPosts = {
         
         <p>Running through this checklist regularly — crawlability, speed, mobile experience, structured data, and site architecture — is what actually moves rankings, rather than just checking boxes.</p>
     `,
-},
+    },
     "shopify-conversion": {
-    tag: "eCommerce",
-    title: "What actually moves Shopify conversion rate",
-    image: "assets/img/shopifyconversion.webp",
-    date: "Sep 10, 2026",
-    readTime: "5 min read",
-    content: `
+        tag: "eCommerce",
+        title: "What actually moves Shopify conversion rate",
+        image: "assets/img/shopifyconversion.webp",
+        date: "Sep 10, 2026",
+        readTime: "5 min read",
+        content: `
         <p><strong>Meta Description:</strong> Discover the proven factors that actually improve Shopify conversion rates — from page speed and checkout flow to trust signals and product page optimization.</p>
         
         <h2>Introduction</h2>
@@ -415,7 +415,7 @@ const blogPosts = {
         <h2>Conclusion</h2>
         <p>Improving <strong>Shopify conversion rate</strong> isn't about chasing every new app or theme trend — it's about consistently optimizing the fundamentals: speed, trust, a frictionless checkout, and product pages that actually answer customer questions. Stores that systematically work through these factors see compounding gains, often outperforming competitors with bigger marketing budgets but weaker on-site experience.</p>
     `,
-},
+    },
 };
 
 const blogModal = document.getElementById("blogModal");
@@ -575,48 +575,86 @@ const legalContent = {
         title: "Privacy Policy",
         updated: "Last updated: September 2026",
         content: `
-            <p>This Privacy Policy describes how DeepTech ("we", "us", "our") collects, uses, and protects information when you visit our website or use our services.</p>
-            <h3>Information We Collect</h3>
-            <p>We may collect information you provide directly to us, such as your name, email address, phone number, and any details you share when requesting a quote or subscribing to our newsletter. We may also automatically collect certain technical information, including your IP address, browser type, and pages visited, to help us understand how our site is used.</p>
-            <h3>How We Use Your Information</h3>
-            <ul>
-                <li>To respond to inquiries and provide quotes</li>
-                <li>To deliver the services you've requested</li>
-                <li>To send updates, newsletters, or marketing communications (only if you've opted in)</li>
-                <li>To improve our website and services</li>
-            </ul>
-            <h3>Sharing Your Information</h3>
-            <p>We do not sell your personal information. We may share information with trusted third-party service providers who help us operate our business (such as hosting or email delivery), and only to the extent necessary for them to perform those services.</p>
-            <h3>Data Security</h3>
-            <p>We take reasonable technical and organizational measures to protect your information from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet is completely secure.</p>
-            <h3>Your Rights</h3>
-            <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at info@deeptechtechnologies.com.</p>
-            <h3>Changes to This Policy</h3>
-            <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
-            <p><em>This is placeholder text. Please replace with your finalized privacy policy before publishing.</em></p>
-        `,
+    <p>This Privacy Policy outlines how DeepTech Technologies ("DeepTech", "we", "us", or "our") collects, processes, stores, and protects personal data when you visit our website, interact with our platforms, or engage our engineering and technical services.</p>
+
+    <h3>1. Information We Collect</h3>
+    <p>We collect personal information to deliver reliable services, maintain system security, and manage client engagements. This falls into three categories:</p>
+    <ul>
+        <li><strong>Directly Provided Information:</strong> Contact details (name, email address, phone number), business credentials, and project specifications submitted via contact forms, quote requests, or consultation bookings.</li>
+        <li><strong>Technical & Telemetry Data:</strong> Automatically logged network metadata, including IP addresses, browser engine details, operating system versions, referring URLs, and session timestamps collected via server access logs and telemetry tools.</li>
+        <li><strong>Cookies & Session Trackers:</strong> Essential session cookies to maintain application state, alongside minimal analytics tags to measure interface performance and user navigation patterns.</li>
+    </ul>
+
+    <h3>2. How We Use Information</h3>
+    <p>We process collected data under standard contractual necessity, legitimate business interests, and explicit consent:</p>
+    <ul>
+        <li>Scoping, estimating, and delivering contracted software engineering, architecture, and technology consulting services.</li>
+        <li>Maintaining platform reliability, monitoring API uptime, and auditing infrastructure security against malicious activity.</li>
+        <li>Communicating project milestones, system updates, billing invoices, and direct administrative notices.</li>
+        <li>Distributing engineering insights or product releases (strictly on an opt-in basis, with one-click unsubscribe functionality).</li>
+    </ul>
+
+    <h3>3. Data Sharing & Infrastructure Subprocessors</h3>
+    <p>DeepTech Technologies does not sell, rent, or monetize personal information. Data disclosures are restricted to authorized subprocessors operating under strict confidentiality and data protection agreements:</p>
+    <ul>
+        <li><strong>Infrastructure & Hosting Providers:</strong> Enterprise cloud hosts and database clusters maintaining industry-standard encryption standards.</li>
+        <li><strong>Operational Tooling:</strong> Transactional email relays, client relationship management (CRM) systems, and monitoring utilities strictly necessary for service operations.</li>
+        <li><strong>Legal Mandates:</strong> Situations where disclosure is required by law, subpoena, or valid regulatory enforcement proceedings.</li>
+    </ul>
+
+    <h3>4. Security Architecture & Data Retention</h3>
+    <p>We enforce technical and organizational safeguards across all environments, including TLS 1.3 encryption for data in transit, encrypted storage volumes at rest, strict role-based access control (RBAC), and multi-factor authentication for operational personnel. We retain personal information only as long as necessary to fulfill project requirements, resolve disputes, and satisfy statutory tax or accounting obligations.</p>
+
+    <h3>5. Your Rights & Contact Details</h3>
+    <p>Subject to applicable data protection laws (such as GDPR or relevant local data statutes), you possess the right to access, rectify, export, or permanently erase your personal data held within our systems. To exercise these rights or raise inquiries regarding your data, contact our security team directly at <a href="mailto:info@deeptechtechnologies.com">info@deeptechtechnologies.com</a>.</p>
+    `,
     },
     terms: {
         title: "Terms of Service",
         updated: "Last updated: September 2026",
         content: `
-            <p>These Terms of Service ("Terms") govern your use of the DeepTech website and services. By accessing our website or engaging our services, you agree to these Terms.</p>
-            <h3>Services</h3>
-            <p>DeepTech provides software development, web design, mobile app development, and digital marketing services. The specific scope, timeline, and cost of any engagement will be outlined in a separate proposal or agreement.</p>
-            <h3>Quotes and Payment</h3>
-            <p>Quotes provided are estimates based on the information available at the time and may be revised once full project requirements are confirmed. Payment terms, including any deposits or milestone payments, will be specified in the project agreement.</p>
-            <h3>Intellectual Property</h3>
-            <p>Unless otherwise agreed in writing, ownership of final deliverables transfers to the client upon full payment. DeepTech retains the right to showcase completed work in its portfolio unless the client requests otherwise.</p>
-            <h3>Client Responsibilities</h3>
-            <p>Clients are responsible for providing timely feedback, content, and access required to complete a project. Delays caused by incomplete information may affect project timelines.</p>
-            <h3>Limitation of Liability</h3>
-            <p>DeepTech is not liable for indirect, incidental, or consequential damages arising from the use of our services, to the fullest extent permitted by law.</p>
-            <h3>Termination</h3>
-            <p>Either party may terminate an ongoing engagement as outlined in the specific project agreement. Fees for work completed up to the termination date remain payable.</p>
-            <h3>Governing Law</h3>
-            <p>These Terms are governed by the laws applicable in Pakistan, without regard to conflict of law principles.</p>
-            <p><em>This is placeholder text. Please replace with your finalized terms of service before publishing.</em></p>
-        `,
+        <p>These Terms of Service ("Terms") constitute a legally binding agreement between you ("Client", "User", or "you") and DeepTech Technologies ("DeepTech", "we", "us", or "our"). By accessing our website, utilizing our infrastructure, or executing a Statement of Work (SOW), you agree to comply with and be bound by these Terms.</p>
+
+        <h3>1. Scope of Services & Engagements</h3>
+        <p>DeepTech Technologies provides software engineering, system architecture, mobile and web application development, UI/UX design, and technical consulting services. Specific deliverables, delivery timelines, hardware/cloud infrastructure requirements, and commercial considerations are defined in individual SOWs, proposals, or Master Services Agreements (MSAs). In the event of a conflict between these Terms and an executed SOW, the specific terms of the SOW shall supersede.</p>
+
+        <h3>2. Estimates, Milestone Payments, & Invoicing</h3>
+        <ul>
+            <li><strong>Quotations:</strong> Preliminary estimates are non-binding calculations based on initial discovery. Formal budgets and delivery phases are locked upon execution of an SOW.</li>
+            <li><strong>Payment Schedules:</strong> Services typically operate on milestone-based billing, sprint retainers, or advance commitment deposits. Invoices are due within the payment window specified in the project agreement (defaulting to 14 calendar days from receipt).</li>
+            <li><strong>Delays & Suspension:</strong> Failure to settle milestone payments within the agreed window grants DeepTech the right to pause active development cycles, withhold staging deployments, or suspend API access until outstanding balances are resolved.</li>
+        </ul>
+
+        <h3>3. Intellectual Property & Deliverables Assignment</h3>
+        <ul>
+            <li><strong>Transfer of Ownership:</strong> All custom source code, documentation, UI assets, and deliverables developed specifically for the Client transfer to the Client's exclusive ownership upon complete and final settlement of all related invoices.</li>
+            <li><strong>Pre-Existing IP & Tooling:</strong> DeepTech retains all rights, title, and interest in internal frameworks, development libraries, proprietary starter kits, and third-party open-source components embedded within deliverables. The Client is granted an irrevocable, royalty-free, perpetual license to use and modify such embedded elements solely as part of the delivered solution.</li>
+            <li><strong>Portfolio & Attribution:</strong> Unless explicitly restricted via an executed Non-Disclosure Agreement (NDA), DeepTech reserves the right to reference the project name, high-level case study metrics, and non-confidential UI designs within our professional portfolio and marketing channels.</li>
+        </ul>
+
+        <h3>4. Client Obligations & Dependencies</h3>
+        <p>Timely completion of projects depends on prompt client cooperation. The Client agrees to:</p>
+        <ul>
+            <li>Provide designated points of contact with decision-making authority for milestone sign-offs.</li>
+            <li>Furnish necessary API credentials, third-party licenses, brand assets, and technical documentation required for system execution.</li>
+            <li>Review deliverables and provide consolidated feedback within 7 business days of release to prevent scope drift and pipeline stall.</li>
+        </ul>
+
+        <h3>5. Change Requests & Scope Management</h3>
+        <p>Any modification, expansion, or architectural change requested outside the specifications established in the SOW requires a formal Change Order. Change Orders will itemize the adjustment to costs, architecture, and deployment schedules before work proceeds.</p>
+
+        <h3>6. Warranties & Post-Deployment Support</h3>
+        <p>DeepTech warrants that custom deliverables will materially conform to the agreed SOW specifications upon deployment. We typically provide a standard 30-day post-launch warranty window dedicated to resolving critical functional bugs resulting from our code. Except as expressly stated, our services and software are delivered "as is" without warranties regarding uninterrupted uptime, third-party API dependencies, or hosting platform outages.</p>
+
+        <h3>7. Limitation of Liability</h3>
+        <p>To the maximum extent permitted by applicable law, neither party shall be liable for indirect, incidental, punitive, or consequential damages (including loss of profits, data corruption, or business interruption). DeepTech's aggregate liability under any engagement shall not exceed the total fees actually received by DeepTech for the specific milestone or project phase directly giving rise to the claim.</p>
+
+        <h3>8. Termination & Exit Procedures</h3>
+        <p>Either party may terminate an engagement for convenience by providing 30 days' written notice, or immediately for cause upon a material breach that remains uncured for 14 days following notification. Upon termination, the Client remains liable for all work executed and non-cancelable third-party commitments incurred up to the effective termination date. Upon full payment of prorated charges, DeepTech will provide available code repositories and export assets to facilitate handover.</p>
+
+        <h3>9. Governing Law & Dispute Resolution</h3>
+        <p>These Terms and any project engagements are governed by and construed under the laws of Pakistan. The parties agree to first seek an amicable resolution through informal executive-level discussions. If unresolved within 30 days, disputes shall be submitted to binding arbitration in Islamabad/Rawalpindi in accordance with the Arbitration Act, 1940, or referred to competent courts of jurisdiction.</p>
+    `,
     },
 };
 
@@ -692,7 +730,7 @@ if (heroVideo) {
                     return;
                 }
                 const resume = () => {
-                    heroVideo.play().catch(() => {});
+                    heroVideo.play().catch(() => { });
                     document.removeEventListener("touchstart", resume);
                     document.removeEventListener("click", resume);
                 };
