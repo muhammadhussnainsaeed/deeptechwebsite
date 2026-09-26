@@ -1,3 +1,16 @@
+// Minimal WebMCP tool registration example (experimental API, Chrome 149+)
+// Registers a "request_quote" action an AI agent could invoke directly.
+if ('modelContext' in navigator) {
+    navigator.modelContext.registerTool({
+        name: "request_quote",
+        description: "Open the quote request form on the DeepTech site",
+        inputSchema: { type: "object", properties: {} },
+        execute: async () => {
+            document.querySelector('#cta')?.scrollIntoView({ behavior: 'smooth' });
+            return { content: [{ type: "text", text: "Scrolled to the quote request section." }] };
+        }
+    });
+}
 /* ===== Header scrolled state ===== */
 const header = document.getElementById("header");
 const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 40);
@@ -182,6 +195,57 @@ const blogPosts = {
 
         <h2>Conclusion</h2>
         <p>Choosing between <strong>custom architecture and templated builds</strong> ultimately comes down to your growth ambitions. If you're building a long-term digital asset, one meant to scale, rank well in search engines, stay secure and stand out from competitors, custom architecture consistently delivers better results where it counts most.</p>
+    `,
+    },
+    "why-ui-ux-important": {
+        tag: "Design",
+        title: "Why UI/UX Design Is Important",
+        image: "assets/img/uiux-conversion.webp",
+        date: "Sep 26, 2026",
+        readTime: "7 min read",
+        content: `
+    <p>UI (User Interface) and UX (User Experience) design are important parts of any digital product. They affect how a product looks, how easy it is to use, and how people feel while using it. From websites and mobile apps to software and connected devices, good UI/UX design helps create a smooth, simple, and enjoyable user experience. Here's why UI/UX design matters so much.</p>
+
+<h3>1. First Impressions Matter</h3>
+<p>People often form an opinion about a digital product within the first few seconds. Before they even explore the content or features, they notice things like the layout, spacing, colors, and navigation. A cluttered design, confusing menu, or inconsistent layout can make a product feel difficult to use or unprofessional.</p>
+
+<p>Good UI/UX design creates a clean and welcoming first impression. When users can quickly understand a product and feel comfortable using it, they are more likely to stay instead of leaving for another option.</p>
+
+<h3>2. It Improves User Engagement and Conversions</h3>
+<p>Every unnecessary click or confusing step can make users give up. Good UX design makes it easier for people to complete the tasks they came for, whether that's buying a product, filling out a form, booking a service, or signing up for an account.</p>
+
+<p>Clear buttons, simple navigation, and logical user flows reduce unnecessary effort. A well-designed interface helps turn visitors into active users and, when appropriate, active users into customers or long-term clients.</p>
+
+<h3>3. Consistency Builds Trust and Brand Recognition</h3>
+<p>A professional UI design keeps important elements consistent throughout a product. Colors, fonts, spacing, buttons, icons, and other design elements should follow a clear visual style.</p>
+
+<p>This consistency makes a website or app easier to understand and gives it a more polished look. It also helps people recognize a brand across different platforms, whether they are using a website, mobile app, or interacting with the brand through other digital channels.</p>
+
+<h3>4. Good UX Can Reduce Support Problems</h3>
+<p>When users can't figure out how something works, they may leave the product or contact customer support. A clear and well-planned user experience can prevent many of these problems before they happen.</p>
+
+<p>Simple navigation, helpful instructions, clear error messages, and easy-to-understand interfaces help users find answers on their own. This can reduce confusion, lower the number of support requests, and save valuable time for both users and support teams.</p>
+
+<h3>5. It Makes Products More Accessible</h3>
+<p>Good UI/UX design should work for as many people as possible. Accessibility should be considered from the beginning of the design process rather than added later.</p>
+
+<p>Features such as readable text, proper color contrast, keyboard navigation, screen-reader-friendly layouts, and responsive designs can make digital products easier to use. Accessible design allows more people to use a website or application comfortably while also helping businesses follow important accessibility guidelines.</p>
+
+<h3>6. It Improves User Retention</h3>
+<p>Getting someone to try a product is only the beginning. The real challenge is giving them a reason to come back.</p>
+
+<p>If a website or app is difficult to understand or frustrating to use, users may stop using it. On the other hand, an intuitive and smooth user experience makes everyday tasks easier and encourages people to return. Good UX can therefore improve user retention and reduce customer churn over time.</p>
+
+<h3>7. Good UX Saves Time and Money</h3>
+<p>Fixing a poorly designed product after it has already been built can be expensive. When the basic structure is not planned properly, adding new features can become difficult and may require major changes later.</p>
+
+<p>Investing in UI/UX design early helps create a strong foundation for the product. Good planning can make future updates easier, reduce unnecessary redesign work, and help the product grow without requiring a complete overhaul.</p>
+
+<h3>Conclusion</h3>
+<p>UI/UX design is much more than making a website or app look good. It is about making digital products simple, useful, accessible, and enjoyable to use. Good UI/UX design can improve user engagement, build trust, support brand recognition, increase conversions, and encourage users to come back.</p>
+
+<p>Whether you're building a website, mobile application, or software product, investing in user experience from the beginning can make a significant difference. A product with great features is valuable, but those features only matter when people can easily understand and use them.</p>
+
     `,
     },
     "seo-checklist": {

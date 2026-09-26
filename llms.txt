@@ -1,0 +1,20 @@
+# DeepTech Technologies
+
+> Full-service software development and digital marketing agency based in Rawalpindi, Pakistan, serving clients across the US, UAE, and beyond.
+
+DeepTech builds custom web, mobile, and eCommerce solutions and runs SEO/digital marketing campaigns for small and mid-sized businesses.
+
+## Services
+- Custom web development (full-stack)
+- Shopify & WooCommerce eCommerce builds
+- iOS, Android, and cross-platform app development (Flutter, React Native)
+- UI/UX design and branding
+- SEO, PPC, and social media marketing
+
+## Contact
+- Email: info@deeptechtechnologies.com
+- WhatsApp: https://wa.me/923350535305
+- Location: Rawalpindi, Pakistan
+
+## Key pages
+- Homepage: https://deeptechtechnologies.com/ — services, portfolio, testimonials, blog, and contact/quote request
