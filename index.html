@@ -59,7 +59,7 @@
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#portfolio">Portfolio</a>
-                <a href="#blog">Blog</a>
+                <a href="blog.html">Blog</a>
                 <a href="#testimonials">Clients</a>
             </nav>
 
@@ -94,7 +94,7 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#blog">Blog</a>
+        <a href="blog.html">Blog</a>
         <a href="#testimonials">Clients</a>
         <a href="#cta" class="mobile-nav__cta">Get a Free Quote</a>
         <button class="mobile-nav__theme" id="themeToggleMobile" type="button">
@@ -464,7 +464,7 @@
             </div>
 
             <div class="portfolio__track no-scrollbar" id="pfTrack">
-                <article class="tcard" data-project="retail-shopify" tabindex="0" role="button" aria-haspopup="dialog">
+                <div class="tcard" data-project="retail-shopify" tabindex="0" role="button" aria-haspopup="dialog">
                     <div class="tcard__img">
                         <img src="assets/img/GM-official.webp" alt="Retail Shopify Replatform">
                         <span class="tcard__restored">Launched</span>
@@ -476,9 +476,9 @@
                             <span>Delivered in 9 weeks</span><span>·</span><span>Course Enrollments +45%</span>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="tcard" data-project="ahmed-fashion" tabindex="0" role="button" aria-haspopup="dialog">
+                <div class="tcard" data-project="ahmed-fashion" tabindex="0" role="button" aria-haspopup="dialog">
                     <div class="tcard__img">
                         <img src="assets/img/ahmedfashion.webp" alt="Ahmed Fashion Wholesale E-Commerce">
                         <span class="tcard__restored">Launched</span>
@@ -490,9 +490,9 @@
                             <span>Delivered in 6 weeks</span><span>·</span><span>B2B WooCommerce</span>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="tcard" data-project="estimation-center" tabindex="0" role="button"
+                <div class="tcard" data-project="estimation-center" tabindex="0" role="button"
                     aria-haspopup="dialog">
                     <div class="tcard__img">
                         <img src="assets/img/estimationcenter.webp"
@@ -506,9 +506,9 @@
                             <span>Delivered in 5 weeks</span><span>·</span><span>Lead Generation</span>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="tcard" data-project="halal-guidelines" tabindex="0" role="button"
+                <div class="tcard" data-project="halal-guidelines" tabindex="0" role="button"
                     aria-haspopup="dialog">
                     <div class="tcard__img">
                         <img src="assets/img/halalguidelines.webp" alt="Halal Guidelines Certification Services">
@@ -521,9 +521,9 @@
                             <span>Delivered in 4 weeks</span><span>·</span><span>Lead Generation</span>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="tcard" data-project="bilal-toys" tabindex="0" role="button" aria-haspopup="dialog">
+                <div class="tcard" data-project="bilal-toys" tabindex="0" role="button" aria-haspopup="dialog">
                     <div class="tcard__img">
                         <img src="assets/img/bilaltoys.webp" alt="Bilal Toys E-Commerce Store">
                         <span class="tcard__restored">Launched</span>
@@ -535,8 +535,8 @@
                             <span>Delivered in 4 weeks</span><span>·</span><span>Retail E-Commerce</span>
                         </div>
                     </div>
-                </article>
-                <article class="tcard" data-project="damascus-depot" tabindex="0" role="button" aria-haspopup="dialog">
+                </div>
+                <div class="tcard" data-project="damascus-depot" tabindex="0" role="button" aria-haspopup="dialog">
                     <div class="tcard__img">
                         <img src="assets/img/damascusdepot.webp" alt="Damascus Depot Custom Knives E-Commerce">
                         <span class="tcard__restored">Launched</span>
@@ -548,7 +548,7 @@
                             <span>Delivered in 5 weeks</span><span>·</span><span>Global Retail</span>
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
@@ -591,13 +591,12 @@
 
             <div class="blog__track no-scrollbar" id="blogTrack">
 
-                <article class="blog-card reveal" data-delay="1" data-post="why-ui-ux-important" tabindex="0"
-                    role="button" aria-haspopup="dialog">
+                <article class="blog-card reveal" data-delay="1" data-href="blog/why-ui-ux-important.html">
                     <div class="blog-card__img">
                         <img src="assets/img/uiux-conversion.webp" alt="Why UI/UX design is important">
                     </div>
                     <span class="blog-card__tag">Design</span>
-                    <h3 class="blog-card__title">Why UI/UX Design Is Important</h3>
+                    <h3 class="blog-card__title"><a href="blog/why-ui-ux-important.html" draggable="false">Why UI/UX Design Is Important</a></h3>
                     <p class="blog-card__excerpt">
                         Discover why UI/UX design is one of the highest-leverage investments a product can make,
                         shaping user trust, retention and business outcomes across every digital touchpoint.
@@ -605,17 +604,16 @@
                     <div class="blog-card__meta">
                         <span>Sep 26, 2026</span><span>·</span><span>7 min read</span>
                     </div>
-                    <a class="blog-card__cta" href="#" data-post="why-ui-ux-important">Read the post <span
+                    <a class="blog-card__cta" href="blog/why-ui-ux-important.html">Read the post <span
                             class="arrow">→</span></a>
                 </article>
 
-                <article class="blog-card reveal" data-post="custom-architecture" tabindex="0" role="button"
-                    aria-haspopup="dialog">
+                <article class="blog-card reveal" data-href="blog/custom-architecture.html">
                     <div class="blog-card__img">
                         <img src="assets/img/custom_software.webp" alt="Why custom architecture beats templated builds">
                     </div>
                     <span class="blog-card__tag">Development</span>
-                    <h3 class="blog-card__title">Why custom architecture beats templated builds</h3>
+                    <h3 class="blog-card__title"><a href="blog/custom-architecture.html" draggable="false">Why custom architecture beats templated builds</a></h3>
                     <p class="blog-card__excerpt">
                         Discover why custom software architecture outperforms templated builds in
                         scalability, security, and long-term ROI. A complete guide for businesses
@@ -624,35 +622,33 @@
                     <div class="blog-card__meta">
                         <span>Sep 14, 2026</span><span>·</span><span>4 min read</span>
                     </div>
-                    <a class="blog-card__cta" href="#" data-post="custom-architecture">Read the post <span
+                    <a class="blog-card__cta" href="blog/custom-architecture.html">Read the post <span
                             class="arrow">→</span></a>
                 </article>
 
-                <article class="blog-card reveal" data-delay="1" data-post="seo-checklist" tabindex="0" role="button"
-                    aria-haspopup="dialog">
+                <article class="blog-card reveal" data-delay="1" data-href="blog/seo-checklist.html">
                     <div class="blog-card__img">
                         <img src="assets/img/SEO.webp" alt="A technical SEO checklist that actually moves rankings">
                     </div>
                     <span class="blog-card__tag">SEO &amp; Marketing</span>
-                    <h3 class="blog-card__title">A technical SEO checklist that actually moves rankings</h3>
+                    <h3 class="blog-card__title"><a href="blog/seo-checklist.html" draggable="false">A technical SEO checklist that actually moves rankings</a></h3>
                     <p class="blog-card__excerpt">
-                        Discover the proven factors that actually improve Shopify conversion rates
-                        from page speed and checkout flow to trust signals and product page optimization.
+                        A practical technical SEO checklist covering crawlability, site speed, structured data
+                        and Core Web Vitals, the real factors that move search rankings.
                     </p>
                     <div class="blog-card__meta">
                         <span>Sep 12, 2026</span><span>·</span><span>8 min read</span>
                     </div>
-                    <a class="blog-card__cta" href="#" data-post="seo-checklist">Read the post <span
+                    <a class="blog-card__cta" href="blog/seo-checklist.html">Read the post <span
                             class="arrow">→</span></a>
                 </article>
 
-                <article class="blog-card reveal" data-delay="2" data-post="shopify-conversion" tabindex="0"
-                    role="button" aria-haspopup="dialog">
+                <article class="blog-card reveal" data-delay="2" data-href="blog/shopify-conversion.html">
                     <div class="blog-card__img">
                         <img src="assets/img/shopifyconversion.webp" alt="What actually moves Shopify conversion rate">
                     </div>
                     <span class="blog-card__tag">eCommerce</span>
-                    <h3 class="blog-card__title">What actually moves Shopify conversion rate</h3>
+                    <h3 class="blog-card__title"><a href="blog/shopify-conversion.html" draggable="false">What actually moves Shopify conversion rate</a></h3>
                     <p class="blog-card__excerpt">
                         Discover the proven factors that actually improve Shopify conversion rates
                         from page speed and checkout flow to trust signals and product page optimization.
@@ -660,34 +656,11 @@
                     <div class="blog-card__meta">
                         <span>Sep 10, 2026</span><span>·</span><span>5 min read</span>
                     </div>
-                    <a class="blog-card__cta" href="#" data-post="shopify-conversion">Read the post <span
+                    <a class="blog-card__cta" href="blog/shopify-conversion.html">Read the post <span
                             class="arrow">→</span></a>
                 </article>
             </div>
         </section>
-
-        <!-- ===================== BLOG MODAL ===================== -->
-        <div class="blog-modal" id="blogModal" aria-hidden="true">
-            <div class="blog-modal__backdrop" data-close="1"></div>
-            <div class="blog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="blogModalTitle">
-                <button class="blog-modal__close" type="button" data-close="1" aria-label="Close article">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                    </svg>
-                </button>
-                <div class="blog-modal__img">
-                    <img id="blogModalImg" src="" alt="">
-                </div>
-                <div class="blog-modal__body">
-                    <span class="blog-modal__tag" id="blogModalTag"></span>
-                    <h2 class="blog-modal__title" id="blogModalTitle"></h2>
-                    <div class="blog-modal__meta" id="blogModalMeta"></div>
-                    <div class="blog-modal__content" id="blogModalContent"></div>
-                </div>
-            </div>
-        </div>
 
 
         <!-- ===================== LEGAL MODAL ===================== -->
@@ -912,7 +885,7 @@
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                             <li><a href="#cta">Contact</a></li>
                         </ul>
                     </div>

@@ -2,19 +2,38 @@
 
 > Full-service software development and digital marketing agency based in Rawalpindi, Pakistan, serving clients across the US, UAE, and beyond.
 
-DeepTech builds custom web, mobile, and eCommerce solutions and runs SEO/digital marketing campaigns for small and mid-sized businesses.
+DeepTech builds custom web, mobile, and eCommerce solutions and runs SEO and digital marketing campaigns for small and mid-sized businesses. Every project is custom-built (no rigid templates), with transparent progress reporting and a free, itemized quote within 48 hours.
 
-## Services
+## Main pages
+
+- [Homepage](https://deeptechtechnologies.com/): Overview of the agency, services, portfolio, testimonials, and quote request
+- [About](https://deeptechtechnologies.com/#about): Who DeepTech is and how the team works
+- [Services](https://deeptechtechnologies.com/#services): Software engineering, design and UX, digital marketing and SEO
+- [Portfolio](https://deeptechtechnologies.com/#portfolio): Case studies of launched client projects
+- [Client testimonials](https://deeptechtechnologies.com/#testimonials): Reviews from business owners DeepTech has worked with
+- [Get a free quote](https://deeptechtechnologies.com/#cta): Request a free, itemized estimate or book a call
+
+## Blog
+
+- [All blog posts](https://deeptechtechnologies.com/blog.html): Full list of DeepTech articles
+- [Why UI/UX Design Is Important](https://deeptechtechnologies.com/blog/why-ui-ux-important.html): How UI/UX design shapes user trust, retention and business outcomes
+- [Why custom architecture beats templated builds](https://deeptechtechnologies.com/blog/custom-architecture.html): Scalability, security and long-term ROI of custom software versus templates
+- [A technical SEO checklist that actually moves rankings](https://deeptechtechnologies.com/blog/seo-checklist.html): Crawlability, site speed, structured data and Core Web Vitals
+- [What actually moves Shopify conversion rate](https://deeptechtechnologies.com/blog/shopify-conversion.html): Page speed, checkout flow, trust signals and product page optimization
+
+## Services offered
+
 - Custom web development (full-stack)
-- Shopify & WooCommerce eCommerce builds
+- Shopify and WooCommerce eCommerce builds
 - iOS, Android, and cross-platform app development (Flutter, React Native)
 - UI/UX design and branding
 - SEO, PPC, and social media marketing
 
 ## Contact
-- Email: info@deeptechtechnologies.com
-- WhatsApp: https://wa.me/923350535305
-- Location: Rawalpindi, Pakistan
 
-## Key pages
-- Homepage: https://deeptechtechnologies.com/ — services, portfolio, testimonials, blog, and contact/quote request
+- [Email info@deeptechtechnologies.com](mailto:info@deeptechtechnologies.com): Quotes and general enquiries
+- [WhatsApp +92 335 0535305](https://wa.me/923350535305): Chat with the team
+- [LinkedIn](https://www.linkedin.com/company/deeptechdigital/): Company page
+- [Facebook](https://www.facebook.com/deeptechtechnologies/): Company page
+- [Instagram](https://www.instagram.com/deeptech.technologies): Company profile
+- Location: Rawalpindi, Pakistan

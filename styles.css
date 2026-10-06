@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ===================== FONTS ===================== */
 @font-face {
 	font-family: "Poppins";
@@ -785,7 +786,7 @@ h3 {
 /* star rows generated via JS-free unicode fallback */
 .proof__stars::before,
 .tquote__stars::before {
-	content: "★★★★★";
+	content: "\2605 \2605 \2605 \2605 \2605 ";
 	color: var(--crimson);
 	letter-spacing: 2px;
 	font-size: 13px;
@@ -1085,7 +1086,7 @@ details[open]>summary .chev {
 }
 
 .compare__marks .yes::after {
-	content: "✓";
+	content: "\2713 ";
 	position: absolute;
 	inset: 0;
 	display: grid;
@@ -1100,7 +1101,7 @@ details[open]>summary .chev {
 }
 
 .compare__marks .no::after {
-	content: "–";
+	content: "\2013 ";
 	position: absolute;
 	inset: 0;
 	display: grid;
@@ -1241,7 +1242,7 @@ details[open]>summary .chev {
 }
 
 .incl li::before {
-	content: "✓";
+	content: "\2713 ";
 	position: absolute;
 	left: 0;
 	font-weight: 700;
@@ -2467,7 +2468,7 @@ body.modal-open {
 	}
 }
 
-/* Dedicated, properly-sized buttons for the cookie banner — the old markup
+/* Dedicated, properly-sized buttons for the cookie banner - the old markup
    reused .btn--black / .btn--white-solid, which are styled for the hero CTA
    (20px font, 1rem+ padding) and looked oversized and out of place here. */
 .cookie-btn {
@@ -2521,4 +2522,255 @@ body.modal-open {
 	.header__utility .btn-quote {
 		display: none;
 	}
+}
+
+/* ===================== BLOG POST PAGE ===================== */
+.post-page main {
+	padding-top: 80px;
+}
+
+.nav a.is-current {
+	color: var(--crimson);
+}
+
+.nav a.is-current::after {
+	width: 100%;
+}
+
+.post {
+	max-width: var(--maxw);
+	margin: 0 auto;
+	padding: 3.5rem 2rem 2rem;
+}
+
+.post__title {
+	font-size: clamp(32px, 5.5vw, 54px);
+	line-height: 1.08;
+	margin-bottom: 1rem;
+}
+
+.post__meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	font-size: 13.5px;
+	color: var(--text-muted);
+	margin-bottom: 2rem;
+}
+
+.post__cover {
+	border-radius: 2rem;
+	overflow: hidden;
+	margin-bottom: 2.5rem;
+	background: var(--grad-crimson);
+}
+
+.post__cover img {
+	width: 100%;
+	max-height: 440px;
+	object-fit: cover;
+}
+
+.post__content {
+	font-size: 17px;
+	line-height: 1.8;
+	color: var(--text-soft);
+}
+
+.post__content p {
+	margin-bottom: 1.3rem;
+}
+
+.post__content h2 {
+	font-size: clamp(24px, 3.4vw, 30px);
+	line-height: 1.2;
+	margin: 2.8rem 0 1rem;
+	color: var(--text);
+}
+
+.post__content h3 {
+	font-size: 20px;
+	line-height: 1.3;
+	margin: 2rem 0 0.8rem;
+	color: var(--text);
+}
+
+.post__content ul,
+.post__content ol {
+	margin: 0 0 1.4rem 1.3rem;
+	display: grid;
+	gap: 0.55rem;
+}
+
+.post__content li {
+	font-size: 16.5px;
+}
+
+.post__content strong {
+	color: var(--text);
+}
+
+.post__content a {
+	color: var(--crimson);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.post__content code {
+	font-size: 0.9em;
+	background: var(--border-soft);
+	padding: 0.15em 0.45em;
+	border-radius: 6px;
+}
+
+.post__content .modern-table-wrapper {
+	overflow-x: auto;
+}
+
+.post__content .modern-table {
+	min-width: 520px;
+}
+
+/* share */
+.post__share {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-top: 3rem;
+	padding: 1.4rem 0;
+	border-top: 1px solid var(--border);
+	border-bottom: 1px solid var(--border);
+}
+
+.post__share-label {
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.post__share-btns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+}
+
+.share-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	min-width: 42px;
+	height: 42px;
+	padding: 0 0.9rem;
+	border-radius: 999px;
+	border: 1px solid var(--border);
+	background: var(--surface);
+	color: var(--text);
+	font: inherit;
+	font-size: 13.5px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.share-btn:hover,
+.share-btn:focus-visible {
+	background: var(--crimson);
+	border-color: var(--crimson);
+	color: #fff;
+}
+
+/* related posts */
+.related {
+	padding: 4rem 0 5rem;
+}
+
+.related__inner {
+	max-width: var(--maxw);
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.related__title {
+	font-size: clamp(28px, 4vw, 40px);
+	margin-bottom: 2rem;
+}
+
+.related__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+
+.related__grid .blog-card {
+	flex: initial;
+	user-select: auto;
+}
+
+@media (max-width: 960px) {
+	.related__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 640px) {
+	.post {
+		padding: 2rem 1.25rem 1rem;
+	}
+
+	.blog-index__inner {
+		padding: 0 1.25rem;
+	}
+
+	.post__content {
+		font-size: 16px;
+	}
+
+	.related__inner {
+		padding: 0 1.25rem;
+	}
+
+	.related__grid {
+		grid-template-columns: 1fr;
+	}
+
+	.post__cover {
+		border-radius: 1.4rem;
+	}
+}
+
+
+/* ===================== ALL-POSTS PAGE ===================== */
+.blog-index {
+	padding: 4rem 0 3rem;
+}
+
+.blog-index__inner {
+	max-width: var(--maxw);
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.blog-index__title {
+	font-size: clamp(40px, 6vw, 72px);
+	margin: 0.8rem 0 1rem;
+}
+
+.blog-index__lead {
+	font-size: 17px;
+	color: var(--text-muted);
+	max-width: 56ch;
+	margin-bottom: 3rem;
+}
+
+.blog-index__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+	gap: 1.5rem;
+}
+
+.blog-index__grid .blog-card {
+	flex: initial;
+	user-select: auto;
 }

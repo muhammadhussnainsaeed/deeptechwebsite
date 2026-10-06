@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Why custom architecture beats templated builds | DeepTech Blog</title>
+    <meta name="description" content="Discover the proven factors that actually improve Shopify conversion rates from page speed and checkout flow to trust signals and product page optimization.">
+    <meta name="author" content="DeepTech">
+    <meta name="theme-color" content="#e11d48">
+    <link rel="canonical" href="https://deeptechtechnologies.com/blog/why-custom-architecture-beats-templated-builds.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://deeptechtechnologies.com/blog/why-custom-architecture-beats-templated-builds.html">
+    <meta property="og:title" content="Why custom architecture beats templated builds">
+    <meta property="og:description" content="Discover the proven factors that actually improve Shopify conversion rates from page speed and checkout flow to trust signals and product page optimization.">
+    <meta property="og:image" content="https://deeptechtechnologies.com/assets/img/custom_software.webp">
+    <meta property="article:published_time" content="2026-09-14">
+    <meta property="article:section" content="Development">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why custom architecture beats templated builds">
+    <meta name="twitter:description" content="Discover the proven factors that actually improve Shopify conversion rates from page speed and checkout flow to trust signals and product page optimization.">
+    <meta name="twitter:image" content="https://deeptechtechnologies.com/assets/img/custom_software.webp">
+
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+
+    <script>
+        (function () {
+            var saved = localStorage.getItem("deeptech-theme");
+            document.documentElement.setAttribute("data-theme", saved === "dark" ? "dark" : "light");
+        })();
+    </script>
+    <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why custom architecture beats templated builds",
+  "image": "https://deeptechtechnologies.com/assets/img/custom_software.webp",
+  "datePublished": "2026-09-14",
+  "author": {
+    "@type": "Organization",
+    "name": "DeepTech"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DeepTech"
+  },
+  "mainEntityOfPage": "https://deeptechtechnologies.com/blog/why-custom-architecture-beats-templated-builds.html",
+  "description": "Discover the proven factors that actually improve Shopify conversion rates from page speed and checkout flow to trust signals and product page optimization."
+}
+    </script>
+</head>
+
+<body class="post-page">
+    <!-- ===================== HEADER ===================== -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a class="logo" href="../index.html" aria-label="DeepTech home">
+                <img class="logo__img" src="../assets/img/deeptech-logo.webp" alt="DeepTech">
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#services">Services</a>
+                <a href="../index.html#portfolio">Portfolio</a>
+                <a href="../index.html#blog" class="is-current">Blog</a>
+                <a href="../index.html#testimonials">Clients</a>
+            </nav>
+
+            <div class="header__utility">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                    </svg>
+                    <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+                    </svg>
+                </button>
+
+                <a class="btn-quote" href="../index.html#cta">
+                    <span class="btn-quote__primary">Get a Free Quote</span>
+                    <!-- <span class="btn-quote__secondary">Free · 24h Response</span> -->
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"
+                    aria-controls="mobileNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#portfolio">Portfolio</a>
+        <a href="../index.html#blog" class="is-current">Blog</a>
+        <a href="../index.html#testimonials">Clients</a>
+        <a href="../index.html#cta" class="mobile-nav__cta">Get a Free Quote</a>
+        <button class="mobile-nav__theme" id="themeToggleMobile" type="button">
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4" />
+                <path
+                    d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            </svg>
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+            </svg>
+            <span class="mobile-nav__theme-label">Switch to dark mode</span>
+        </button>
+    </nav>
+
+    <main id="top">
+        <article class="post">
+            <header class="post__head">
+                <span class="blog-modal__tag">Development</span>
+                <h1 class="post__title">Why custom architecture beats templated builds</h1>
+                <div class="post__meta">
+                    <span>By DeepTech</span><span>·</span>
+                    <time datetime="2026-09-14">Sep 14, 2026</time><span>·</span>
+                    <span>4 min read</span>
+                </div>
+            </header>
+
+            <figure class="post__cover">
+                <img src="../assets/img/custom_software.webp" alt="Why custom architecture beats templated builds">
+            </figure>
+
+            <div class="post__content">
+                
+        
+        <h2>Introduction</h2>
+        <p>In today's competitive digital landscape, businesses face a critical decision early in their growth journey: should they build on a <strong>templated platform</strong> or invest in <strong>custom architecture</strong>? Templated builds think WordPress themes, drag and drop website builders or off the shelf SaaS templates, promise speed and low upfront cost. Custom architecture on the other hand is built from the ground up to match a business's exact needs.</p>
+        
+        <p>While templates can be a smart starting point for very simple projects, businesses that plan to scale, differentiate or compete seriously almost always outgrow them. This article breaks down exactly why <strong>custom architecture beats templated builds</strong> in the areas that matter most: performance, scalability, security, SEO and long-term cost.</p>
+        
+        
+        <h2>1. Scalability: Built to Grow, Not Just to Launch</h2>
+        <p>Templated builds are designed for the average use case, not <em>your</em> use case. As traffic, data and feature requirements grow, templates start showing cracks: slow load times, plugin conflicts and rigid database structures that can't handle complexity.</p>
+        
+        <p><strong>Custom architecture</strong> is designed with scalability in mind from day one. Developers can:</p>
+        <ul>
+            <li>Choose the right database structure for your data model</li>
+            <li>Build modular systems that grow feature by feature without breaking existing functionality</li>
+            <li>Optimize the codebase specifically for your traffic patterns and business logic</li>
+        </ul>
+        <p>This means a custom-built system can handle 10x growth without a costly rebuild, something templated platforms rarely manage gracefully.</p>
+
+        <h2>2. Performance and Page Speed (Direct SEO Advantage)</h2>
+        <p>Page speed is a confirmed ranking factor for search engines and it's also one of the biggest weaknesses of templated builds. Most templates are bloated with unused CSS, generic JavaScript libraries and unnecessary plugins that slow down load times.</p>
+        
+        <p>With <strong>custom web architecture</strong>, every line of code serves a purpose. This results in:</p>
+        <ul>
+            <li>Faster load times (a key Core Web Vitals metric)</li>
+            <li>Lower bounce rates</li>
+            <li>Better crawlability for search engine bots</li>
+            <li>Improved mobile performance</li>
+        </ul>
+        <p>Since <strong>site speed directly impacts SEO rankings</strong>, businesses that choose custom-built websites often see measurable improvements in organic search visibility compared to their templated competitors.</p>
+
+        <h2>3. Security: Fewer Vulnerabilities, More Control</h2>
+        <p>Templated platforms are a popular target for hackers precisely <em>because</em> they're popular. A vulnerability found in a widely used theme or plugin can expose thousands of websites simultaneously.</p>
+        
+        <p>Custom architecture reduces this risk by:</p>
+        <ul>
+            <li>Eliminating unnecessary third-party plugins and their security gaps</li>
+            <li>Allowing full control over authentication, data handling and server configuration</li>
+            <li>Enabling security updates on your own schedule, not a vendor's</li>
+        </ul>
+        <p>For businesses handling sensitive customer data: e-commerce, fintech, healthcare. This level of control isn't optional, it's essential.</p>
+
+        <h2>4. Brand Differentiation and User Experience</h2>
+        <p>Templates are, by definition, shared by thousands of other businesses. Even with customization options, there's a ceiling to how unique a templated site can look, feel and customers notice.</p>
+        
+        <p>Custom architecture allows for:</p>
+        <ul>
+            <li>A fully unique user interface aligned with brand identity</li>
+            <li>User flows designed around actual customer behavior, not generic assumptions</li>
+            <li>Custom features and interactions competitors simply don't have access to</li>
+        </ul>
+        <p>This translates into better user engagement, stronger brand recall and higher conversion rates.</p>
+
+        <h2>5. Long-Term Cost: The ROI Templates Don't Show You</h2>
+        <p>Templated builds look cheaper upfront and they are initially. But hidden costs add up over time:</p>
+        
+
+        <style>
+    .modern-table-wrapper {
+        margin: 2rem 0;
+        border-radius: 8px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+        overflow: hidden; 
+        border: 1px solid #000000;
+        background-color: #000000;
+    }
+    .modern-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        color: #d1d5db;
+    }
+    .modern-table th {
+        background-color: #000000;
+        color: #f9fafb;
+        font-weight: 600;
+        padding: 16px 20px;
+        border-bottom: 2px solid #000000;
+    }
+    .modern-table td {
+        padding: 16px 20px;
+        border-bottom: 1px solid #000000;
+    }
+    .modern-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+    .modern-table tbody tr:hover {
+        background-color: #000000;
+        transition: background-color 0.2s ease;
+    }
+    .modern-table td strong {
+        color: #f3f4f6;
+        font-weight: 500;
+    }
+</style>
+
+<div class="modern-table-wrapper">
+    <table class="modern-table">
+        <thead>
+            <tr>
+                <th>Factor</th>
+                <th>Templated Build</th>
+                <th>Custom Architecture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Initial Cost</strong></td>
+                <td>Low</td>
+                <td>Higher</td>
+            </tr>
+            <tr>
+                <td><strong>Scalability Costs</strong></td>
+                <td>High (frequent rebuilds)</td>
+                <td>Low (built to scale)</td>
+            </tr>
+            <tr>
+                <td><strong>Plugin/License Fees</strong></td>
+                <td>Ongoing, recurring</td>
+                <td>None or minimal</td>
+            </tr>
+            <tr>
+                <td><strong>Performance Optimization</strong></td>
+                <td>Limited, often needs workarounds</td>
+                <td>Built-in from the start</td>
+            </tr>
+            <tr>
+                <td><strong>Long-Term ROI</strong></td>
+                <td>Diminishes over time</td>
+                <td>Increases over time</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        
+        
+        <br>
+        <p>When you factor in plugin subscriptions, performance patches, security fixes and eventual platform migrations, <strong>custom architecture often proves more cost-effective over a 3-5 year horizon</strong>.</p>
+
+        <h2>6. When Templated Builds Still Make Sense</h2>
+        <p>To be fair, templates aren't inherently bad. They're a good fit when:</p>
+        <ul>
+            <li>You need a simple landing page or MVP validated quickly</li>
+            <li>Budget constraints rule out custom development at launch</li>
+            <li>The business has no immediate plans for scale or complex functionality</li>
+        </ul>
+        <p>The key is recognizing <em>when</em> a template stops serving the business and planning the transition to custom architecture before performance or security issues start costing customers.</p>
+
+        <h2>Conclusion</h2>
+        <p>Choosing between <strong>custom architecture and templated builds</strong> ultimately comes down to your growth ambitions. If you're building a long-term digital asset, one meant to scale, rank well in search engines, stay secure and stand out from competitors, custom architecture consistently delivers better results where it counts most.</p>
+    
+            </div>
+
+            <div class="post__share" id="share" data-title="Why custom architecture beats templated builds">
+                <span class="post__share-label">Share this post</span>
+                <div class="post__share-btns">
+                    <a class="share-btn" data-share="linkedin" target="_blank" rel="noopener" aria-label="Share on LinkedIn" href="#"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.063 2.063 0 1 1 0-4.128 2.063 2.063 0 0 1 0 4.128zM7.119 20.452H3.555V9h3.564v11.452z"/></svg></a>
+                    <a class="share-btn" data-share="facebook" target="_blank" rel="noopener" aria-label="Share on Facebook" href="#"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0 23.4.6 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.098 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.674V1.326C24 .6 23.4 0 22.675 0z"/></svg></a>
+                    <a class="share-btn" data-share="x" target="_blank" rel="noopener" aria-label="Share on X" href="#"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a class="share-btn" data-share="whatsapp" target="_blank" rel="noopener" aria-label="Share on WhatsApp" href="#"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.868-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.001 2C6.478 2 2 6.478 2 12.001c0 1.798.475 3.483 1.302 4.949L2.05 21.951l5.09-1.322A9.955 9.955 0 0 0 12.001 22C17.523 22 22 17.523 22 12.001 22 6.478 17.523 2 12.001 2z"/></svg></a>
+                    <button class="share-btn share-btn--copy" type="button" id="copyLink" aria-label="Copy link"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span id="copyLinkLabel">Copy link</span></button>
+                </div>
+            </div>
+        </article>
+
+        <!-- ===================== RELATED ===================== -->
+        <section class="related" aria-labelledby="relatedTitle">
+            <div class="related__inner">
+                <h2 class="related__title" id="relatedTitle">Keep <span class="crimson">reading.</span></h2>
+                <div class="related__grid">
+                <a class="blog-card" href="why-uiux-design-is-important.html">
+                    <div class="blog-card__img"><img src="../assets/img/uiux-conversion.webp" alt="Why UI/UX Design Is Important" loading="lazy"></div>
+                    <span class="blog-card__tag">Design</span>
+                    <h3 class="blog-card__title">Why UI/UX Design Is Important</h3>
+                    <p class="blog-card__excerpt">Discover why UI/UX design is one of the highest-leverage investments a product can make, shaping user trust, retention and business outcomes across every digital touchpoint.</p>
+                    <div class="blog-card__meta"><span>Sep 26, 2026</span><span>·</span><span>7 min read</span></div>
+                    <span class="blog-card__cta">Read the post <span class="arrow">→</span></span>
+                </a>
+
+                <a class="blog-card" href="a-technical-seo-checklist-that-actually-moves-rankings.html">
+                    <div class="blog-card__img"><img src="../assets/img/SEO.webp" alt="A technical SEO checklist that actually moves rankings" loading="lazy"></div>
+                    <span class="blog-card__tag">SEO & Marketing</span>
+                    <h3 class="blog-card__title">A technical SEO checklist that actually moves rankings</h3>
+                    <p class="blog-card__excerpt">Discover the proven factors that actually improve Shopify conversion rates from page speed and checkout flow to trust signals and product page optimization.</p>
+                    <div class="blog-card__meta"><span>Sep 12, 2026</span><span>·</span><span>8 min read</span></div>
+                    <span class="blog-card__cta">Read the post <span class="arrow">→</span></span>
+                </a>
+
+                <a class="blog-card" href="what-actually-moves-shopify-conversion-rate.html">
+                    <div class="blog-card__img"><img src="../assets/img/shopifyconversion.webp" alt="What actually moves Shopify conversion rate" loading="lazy"></div>
+                    <span class="blog-card__tag">eCommerce</span>
+                    <h3 class="blog-card__title">What actually moves Shopify conversion rate</h3>
+                    <p class="blog-card__excerpt">Discover the proven factors that actually improve Shopify conversion rates from page speed and checkout flow to trust signals and product page optimization.</p>
+                    <div class="blog-card__meta"><span>Sep 10, 2026</span><span>·</span><span>5 min read</span></div>
+                    <span class="blog-card__cta">Read the post <span class="arrow">→</span></span>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== FOOTER ===================== -->
+        <section class="cta">
+            <div class="cta__inner reveal">
+                <h2 class="cta__title">
+                    Your growth is <span class="muted">waiting.</span><br>Let's build it
+                    <span class="muted">together.</span>
+                </h2>
+                <p class="cta__sub">
+                    Free, itemized estimate within 48 hours. No obligation. Dynamic
+                    payment plans available.
+                </p>
+                <div class="cta__buttons">
+                    <a class="btn btn--black" href="tel:+923350535305">Call DeepTech</a>
+                    <a class="btn btn--white-solid" href="mailto:info@deeptechtechnologies.com">Request a quote</a>
+                </div>
+                <div class="cta__badges">
+                    <span>Full-Stack Dev</span><span>·</span><span>SEO &amp; PPC</span><span>·</span><span>24/7
+                        Support</span><span>·</span><span>Global Clients</span>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__top">
+                    <div class="footer__brand">
+                        <a class="logo" href="../index.html" aria-label="DeepTech home">
+                            <img class="logo__img" src="../assets/img/deeptech-logo.webp" alt="DeepTech">
+                        </a>
+                        <p class="footer__tagline">
+                            A full-service software development and digital marketing agency
+                            engineering growth for businesses across the US, UAE, and beyond.
+                        </p>
+                        <div class="footer__socials">
+                            <a class="footer__social" href="mailto:info@deeptechtechnologies.com"
+                                aria-label="Email DeepTech">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M2 4h20c.552 0 1 .448 1 1v14c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V5c0-.552.448-1 1-1zm1.4 2L12 12.5 20.6 6H3.4zM3 8.2V18h18V8.2l-9 6.9-9-6.9z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://www.linkedin.com/company/deeptechdigital/"
+                                target="_blank" rel="noopener" aria-label="DeepTech on LinkedIn">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://www.facebook.com/deeptechtechnologies/"
+                                target="_blank" rel="noopener" aria-label="DeepTech on Facebook">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0 23.4.6 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.098 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.674V1.326C24 .6 23.4 0 22.675 0z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://www.instagram.com/deeptech.technologies"
+                                target="_blank" rel="noopener" aria-label="DeepTech on Instagram">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://wa.me/923350535305" target="_blank" rel="noopener"
+                                aria-label="Message DeepTech on WhatsApp">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.868-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.001 2C6.478 2 2 6.478 2 12.001c0 1.798.475 3.483 1.302 4.949L2.05 21.951l5.09-1.322A9.955 9.955 0 0 0 12.001 22C17.523 22 22 17.523 22 12.001 22 6.478 17.523 2 12.001 2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Quick Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="../index.html#about">About</a></li>
+                            <li><a href="../index.html#services">Services</a></li>
+                            <li><a href="../index.html#portfolio">Portfolio</a></li>
+                            <li><a href="../index.html#blog">Blog</a></li>
+                            <li><a href="../index.html#cta">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="../index.html#services">Web Development</a></li>
+                            <li><a href="../index.html#services">Mobile App Development</a></li>
+                            <li><a href="../index.html#services">eCommerce &amp; CMS</a></li>
+                            <li><a href="../index.html#services">UI/UX &amp; Branding</a></li>
+                            <li><a href="../index.html#services">SEO &amp; Digital Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col footer__col--wide">
+                        <h4 class="footer__heading">Get in Touch</h4>
+                        <ul class="footer__contact">
+                            <li>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span>Rawalpindi, Pakistan</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="m22 6-10 7L2 6" />
+                                </svg>
+                                <a href="mailto:info@deeptechtechnologies.com">info@deeptechtechnologies.com</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+                                </svg>
+                                <a href="https://wa.me/923350535305" target="_blank" rel="noopener">+92 335 0535305</a>
+                            </li>
+                        </ul>
+
+                        <form class="footer__newsletter" id="newsletterForm">
+                            <label class="footer__newsletter-label" for="newsletterEmail">Subscribe for growth
+                                insights</label>
+                            <div class="footer__newsletter-row">
+                                <input type="email" id="newsletterEmail" name="email" placeholder="you@company.com"
+                                    required autocomplete="email">
+                                <button type="submit" aria-label="Subscribe">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14" />
+                                        <path d="m13 6 6 6-6 6" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="footer__newsletter-note" id="newsletterNote"></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <span>© 2026 DeepTech. All rights reserved.</span>
+                    <div class="footer__legal">
+                        <a href="../index.html#privacy" data-legal="privacy">Privacy Policy</a><span>·</span><a href="../index.html#terms"
+                            data-legal="terms">Terms of Service</a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <div class="cookie-banner" id="cookieBanner" aria-hidden="true">
+        <div class="cookie-banner__inner">
+            <p class="cookie-banner__text">
+                We use cookies to improve your experience and analyze site traffic.
+                By clicking "Accept", you consent to our use of cookies.
+                Read our <a href="../index.html#privacy" data-legal="privacy" class="cookie-banner__link">Privacy Policy</a>.
+            </p>
+            <div class="cookie-banner__actions">
+                <button type="button" class="cookie-btn cookie-btn--decline" id="declineCookies">Decline</button>
+                <button type="button" class="cookie-btn cookie-btn--accept" id="acceptCookies">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../blog.js"></script>
+</body>
+
+</html>
