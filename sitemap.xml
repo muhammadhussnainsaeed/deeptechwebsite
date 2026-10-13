@@ -1,33 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage -->
   <url>
     <loc>https://deeptechtechnologies.com/</loc>
     <lastmod>2026-10-06</lastmod>
-    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main Hub Pages -->
+  <url>
+    <loc>https://deeptechtechnologies.com/services.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://deeptechtechnologies.com/blog.html</loc>
     <lastmod>2026-10-06</lastmod>
-    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
+
+  <!-- Core Service Pages -->
+  <url>
+    <loc>https://deeptechtechnologies.com/services/web-development.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/shopify-development.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/wordpress-woocommerce.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/native-mobile-apps.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/cross-platform-apps.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/ui-ux-design.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/user-journey-conversion.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/branding-graphic-design.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/messaging-storytelling.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/technical-on-page-seo.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/link-building-reputation.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/content-influencer-marketing.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deeptechtechnologies.com/services/social-media-ppc.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Individual Blog Posts -->
   <url>
     <loc>https://deeptechtechnologies.com/blog/why-uiux-design-is-important.html</loc>
     <lastmod>2026-09-26</lastmod>
-    <priority>0.64</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://deeptechtechnologies.com/blog/why-custom-architecture-beats-templated-builds.html</loc>
     <lastmod>2026-09-14</lastmod>
-    <priority>0.64</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url> 
   <url>
     <loc>https://deeptechtechnologies.com/blog/a-technical-seo-checklist-that-actually-moves-rankings.html</loc>
     <lastmod>2026-09-12</lastmod>
-    <priority>0.64</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://deeptechtechnologies.com/blog/what-actually-moves-shopify-conversion-rate.html</loc>
     <lastmod>2026-09-10</lastmod>
-    <priority>0.64</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
+
 </urlset>
