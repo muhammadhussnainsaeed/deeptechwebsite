@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About DeepTech - Software Development &amp; Digital Marketing Agency in Rawalpindi</title>
+    <meta name="description"
+        content="Learn about DeepTech: our story, mission, values, team and approach. A full-service software development and digital marketing agency in Rawalpindi serving clients in the US, UAE and beyond.">
+    <meta name="author" content="DeepTech">
+    <meta name="theme-color" content="#e11d48">
+    <link rel="canonical" href="https://deeptechtechnologies.com/about.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deeptechtechnologies.com/about.html">
+    <meta property="og:title" content="About DeepTech - Engineering trust, not just code">
+    <meta property="og:description"
+        content="Our story, mission, values, team and approach. Custom, data-driven software and digital marketing from Rawalpindi.">
+    <meta property="og:image" content="assets/img/og-image.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About DeepTech - Engineering trust, not just code">
+    <meta name="twitter:image" content="assets/img/og-image.webp">
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem("deeptech-theme"); } catch (e) { }
+            document.documentElement.setAttribute("data-theme", saved === "dark" ? "dark" : "light");
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About DeepTech",
+      "url": "https://deeptechtechnologies.com/about.html",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "DeepTech Technologies",
+        "url": "https://deeptechtechnologies.com/",
+        "email": "info@deeptechtechnologies.com",
+        "telephone": "+923350535305",
+        "address": { "@type": "PostalAddress", "addressLocality": "Rawalpindi", "addressCountry": "PK" }
+      }
+    }
+    </script>
+</head>
+
+<body class="about-page">
+    <!-- ===================== HEADER ===================== -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a class="logo" href="index.html" aria-label="DeepTech home">
+                <img class="logo__img" src="assets/img/deeptech-logo.webp" alt="DeepTech">
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="about.html" class="is-current" aria-current="page">About</a>
+                <a href="services.html">Services</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="blog.html">Blog</a>
+                <a href="index.html#testimonials">Clients</a>
+            </nav>
+
+            <div class="header__utility">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                    </svg>
+                    <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+                    </svg>
+                </button>
+
+                <a class="btn-quote" href="index.html#cta">
+                    <span class="btn-quote__primary">Get a Free Quote</span>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"
+                    aria-controls="mobileNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#testimonials">Clients</a>
+        <a href="index.html#cta" class="mobile-nav__cta">Get a Free Quote</a>
+        <button class="mobile-nav__theme" id="themeToggleMobile" type="button">
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4" />
+                <path
+                    d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+            </svg>
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+            </svg>
+            <span class="mobile-nav__theme-label">Switch to dark mode</span>
+        </button>
+    </nav>
+
+    <main id="top">
+        <!-- ===================== HERO ===================== -->
+        <section class="ab-hero">
+            <div class="ab-wrap">
+                <div class="ab-crumbs reveal"><a href="index.html">Home</a><span>/</span><span>About</span></div>
+                <span class="eyebrow reveal">— About DeepTech</span>
+                <h1 class="ab-hero__title reveal" data-delay="1">Engineering trust, not just <span
+                        class="crimson">code.</span></h1>
+                <p class="ab-hero__lead reveal" data-delay="2">
+                    DeepTech is a full-service software development and digital marketing agency based in
+                    Rawalpindi, serving local and international clients across the US, UAE and beyond. We handle the
+                    technical complexity of digital growth so you can focus on running your business.
+                </p>
+                <div class="ab-hero__cta reveal" data-delay="3">
+                    <a class="sp-btn sp-btn--primary" href="index.html#cta">Get a free quote <span>→</span></a>
+                    <a class="sp-btn" href="services.html">Explore services</a>
+                </div>
+
+                <div class="ab-stats">
+                    <div class="ab-stat reveal"><strong>50<span class="crimson">+</span></strong><span>Businesses
+                            served</span></div>
+                    <div class="ab-stat reveal" data-delay="1"><strong>3<span
+                                class="crimson">+</span></strong><span>Countries
+                            reached</span></div>
+                    <div class="ab-stat reveal" data-delay="2"><strong>48<span
+                                class="crimson">h</span></strong><span>Avg.
+                            quote turnaround</span></div>
+                    <div class="ab-stat reveal" data-delay="3"><strong>24<span
+                                class="crimson">/7</span></strong><span>Support
+                            &amp; consultancy</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== STORY & MISSION ===================== -->
+        <section class="ab-section" id="story">
+            <div class="ab-wrap">
+                <div class="ab-head reveal">
+                    <span class="eyebrow">— Our story</span>
+                    <h2 class="ab-title">Built to be a partner, <span class="crimson">not a vendor.</span></h2>
+                </div>
+                <div class="ab-story">
+                    <div class="ab-prose reveal">
+                        <p>
+                            DeepTech started in 2026 in Rawalpindi as an evolution of our parent brand,
+                            <a href="https://deeptechdigital.com" target="_blank"
+                                rel="noopener noreferrer"><strong class="crimson">deeptechdigital.com</strong></a>.
+                            While all our foundational operations were initially handled there, we launched this
+                            dedicated group to address a simple frustration:
+                            too many businesses were being sold rigid templates and vague promises. We set out to do the
+                            opposite, designing every engagement around the client's real operational requirements.
+                        </p>
+                        <p>
+                            Today we build custom web, mobile and eCommerce solutions and run SEO, PPC and social
+                            campaigns for more than 50 businesses. From a fintech trading academy to wholesale fashion,
+                            construction estimating, certification consulting and global retail stores, our work spans
+                            industries but follows one rule: measurable outcomes over vanity metrics.
+                        </p>
+                        <p>
+                            We prioritise data-driven strategies, scalable architectures and honest communication, with
+                            transparent weekly or monthly reports, itemised quotes within 48 hours and dynamic payment
+                            plans, because trust is engineered just like software.
+                        </p>
+                    </div>
+                    <div class="ab-mv">
+                        <div class="ab-mv__card reveal">
+                            <h3>Our mission</h3>
+                            <p>To handle the technical complexity of digital growth so business owners can focus on
+                                running their business, backed by transparent, measurable results.</p>
+                        </div>
+                        <div class="ab-mv__card reveal" data-delay="1">
+                            <h3>Our vision</h3>
+                            <p>To be the premier technical and digital growth partner for SMEs across South Asia and the
+                                Middle East, transforming complex engineering and intelligent systems into seamless,
+                                scalable business success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== VALUES ===================== -->
+        <section class="ab-section" id="values">
+            <div class="ab-wrap">
+                <div class="ab-head reveal">
+                    <span class="eyebrow">— What we stand for</span>
+                    <h2 class="ab-title">Values we <span class="crimson">build by.</span></h2>
+                    <p class="ab-lead">Six principles shape every proposal, sprint and campaign we deliver.</p>
+                </div>
+                <div class="ab-values">
+                    <article class="ab-value reveal">
+                        <span class="ab-value__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
+                            </svg></span>
+                        <h3>Strictly custom</h3>
+                        <p>No off-the-shelf shortcuts. Every solution is architected around your operational
+                            requirements and built to scale.</p>
+                    </article>
+                    <article class="ab-value reveal" data-delay="1">
+                        <span class="ab-value__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3v18h18" />
+                                <path d="m19 9-5 5-4-4-3 3" />
+                            </svg></span>
+                        <h3>Data-driven</h3>
+                        <p>Decisions are backed by numbers. We tie our work to measurable ROI, not guesswork.</p>
+                    </article>
+                    <article class="ab-value reveal" data-delay="2">
+                        <span class="ab-value__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg></span>
+                        <h3>Radical transparency</h3>
+                        <p>Itemised quotes, honest timelines and regular progress reports, so you always know where
+                            things stand.</p>
+                    </article>
+                    <article class="ab-value reveal">
+                        <span class="ab-value__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
+                            </svg></span>
+                        <h3>Always available</h3>
+                        <p>Continuous support and 24/7 consultancy. We stay with you long after launch day.</p>
+                    </article>
+                    <article class="ab-value reveal" data-delay="1">
+                        <span class="ab-value__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg></span>
+                        <h3>Quality &amp; reliability</h3>
+                        <p>Clean code, tested releases and on-time, on-budget delivery are the baseline, not a
+                            bonus.</p>
+                    </article>
+                    <article class="ab-value reveal" data-delay="2">
+                        <span class="ab-value__icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg></span>
+                        <h3>Partnership first</h3>
+                        <p>Flexible payment plans and honest advice, even when it means recommending a smaller scope.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== APPROACH ===================== -->
+        <section class="ab-section" id="approach">
+            <div class="ab-wrap">
+                <div class="ab-head reveal">
+                    <span class="eyebrow">— How we work</span>
+                    <h2 class="ab-title">A process that keeps you <span class="crimson">in control.</span></h2>
+                </div>
+                <div class="ab-steps">
+                    <div class="ab-step reveal">
+                        <h3>Discover</h3>
+                        <p>We learn your business, goals and constraints, then send an itemised, no-obligation quote
+                            within 48 hours.</p>
+                    </div>
+                    <div class="ab-step reveal" data-delay="1">
+                        <h3>Design &amp; plan</h3>
+                        <p>User journeys, wireframes and a clear architecture so everyone agrees before code is
+                            written.</p>
+                    </div>
+                    <div class="ab-step reveal" data-delay="2">
+                        <h3>Build &amp; launch</h3>
+                        <p>Iterative development with regular check-ins, thorough testing and a smooth go-live.</p>
+                    </div>
+                    <div class="ab-step reveal" data-delay="3">
+                        <h3>Grow &amp; support</h3>
+                        <p>SEO, PPC and optimisation backed by weekly or monthly reports and ongoing support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TIMELINE ===================== -->
+        <section class="ab-section" id="timeline">
+            <div class="ab-wrap">
+                <div class="ab-head reveal">
+                    <span class="eyebrow">— Milestones</span>
+                    <h2 class="ab-title">Our journey <span class="crimson">so far.</span></h2>
+                    <p class="ab-lead">Replace the highlighted years and details with your real milestones.</p>
+                </div>
+                <div class="ab-timeline">
+                    <div class="ab-tl reveal">
+                        <span class="ab-tl__year">Early 2026</span>
+                        <h3>DeepTech Technologies is founded</h3>
+                        <p>Launched in Rawalpindi as a specialized engineering division under our parent company,
+                            <strong>DeepTech Digital</strong>, focusing on custom web and software development.</p>
+                    </div>
+
+                    <div class="ab-tl reveal">
+                        <span class="ab-tl__year">Mid 2026</span>
+                        <h3>Expanding into digital marketing</h3>
+                        <p>Added SEO, PPC, and data-driven social media management to deliver full-funnel digital growth
+                            alongside our technical solutions.</p>
+                    </div>
+
+                    <div class="ab-tl reveal">
+                        <span class="ab-tl__year">Q3 2026</span>
+                        <h3>First international clients</h3>
+                        <p>Expanded our global footprint beyond Pakistan, engineering scalable solutions for key clients
+                            in the US, UAE, and beyond.</p>
+                    </div>
+
+                    <div class="ab-tl reveal">
+                        <span class="ab-tl__year">Late 2026</span>
+                        <h3>Mobile &amp; eCommerce</h3>
+                        <p>Launched native iOS app development, cross-platform solutions, and high-performance Shopify
+                            and WooCommerce storefronts.</p>
+                    </div>
+
+                    <div class="ab-tl reveal">
+                        <span class="ab-tl__year">Today</span>
+                        <h3>50+ businesses served</h3>
+                        <p>Trusted by more than 50 businesses worldwide, backed by robust architectures, a 48-hour quote
+                            turnaround, and transparent 24/7 technical support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TEAM ===================== -->
+        <section class="ab-section" id="team">
+            <div class="ab-wrap">
+                <div class="ab-head reveal">
+                    <span class="eyebrow">— The people</span>
+                    <h2 class="ab-title">Meet the team <span class="crimson">behind it.</span></h2>
+                    <p class="ab-lead">Engineers, designers and marketers working as one accountable team.</p>
+                </div>
+                <div class="ab-team">
+                    <article class="ab-member reveal" data-delay="2">
+                        <div class="ab-member__photo"><img src="assets/img/m-hussnainsaeed.jpeg" alt="Name, Lead UI/UX Designer" loading="lazy"></div>
+                        <div class="ab-member__body">
+                            <div class="ab-member__name">M. Hussnain Saeed</div>
+                            <div class="ab-member__role">Chief Executive Officer</div>
+                            <p class="ab-member__bio">We Deliver!</p>
+                        </div>
+                    </article>
+                    <article class="ab-member reveal">
+                        <div class="ab-member__photo"><img src="assets/img/abdul-wasey-piracha.png" alt="Name, Lead UI/UX Designer" loading="lazy"></div>
+                        <div class="ab-member__body">
+                            <div class="ab-member__name">Abdul Wasey Piracha</div>
+                            <div class="ab-member__role">Chief Marketing Officer</div>
+                            <p class="ab-member__bio">Hard to ignore.</p>
+                        </div>
+                    </article>
+                    <article class="ab-member reveal" data-delay="1">
+                        <div class="ab-member__photo"><img src="assets/img/m-ali.jpeg" alt="Name, Lead UI/UX Designer" loading="lazy"></div>
+                        <div class="ab-member__body">
+                            <div class="ab-member__name">M. Ali</div>
+                            <div class="ab-member__role">Chief Operating Officer</div>
+                            <p class="ab-member__bio">Smooth Operator.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== LOCATION ===================== -->
+        <section class="ab-section" id="location">
+            <div class="ab-wrap">
+                <div class="ab-head reveal">
+                    <span class="eyebrow">— Find us</span>
+                    <h2 class="ab-title">Our office in <span class="crimson">Rawalpindi.</span></h2>
+                </div>
+                <div class="ab-loc">
+                    <div class="ab-loc__info reveal">
+                        <h3>Visit or reach out</h3>
+                        <div class="ab-loc__row">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Office M24, Gold Point Shopping Mall, Rawalpindi, Pakistan</span>
+                        </div>
+                        <div class="ab-loc__row">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 6-10 7L2 6" />
+                            </svg>
+                            <a href="mailto:info@deeptechtechnologies.com">info@deeptechtechnologies.com</a>
+                        </div>
+                        <div class="ab-loc__row">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+                            </svg>
+                            <a href="https://wa.me/923350535305" target="_blank" rel="noopener">+92 335 0535305</a>
+                        </div>
+                        <div class="ab-loc__row">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
+                            </svg>
+                            <span>Mon–Sat, 10am–8pm PKT</span>
+                        </div>
+                        <a class="sp-btn sp-btn--primary" href="index.html#cta" style="align-self:flex-start">Get in
+                            touch <span>→</span></a>
+                    </div>
+                    <div class="ab-map reveal" data-delay="1">
+                        <div class="ab-map__stage">
+                            <img class="ab-map__img" src="assets/img/world-map.png" width="1980" height="1290"
+                                loading="lazy"
+                                alt="World map showing DeepTech HQ in Rawalpindi and clients in the UAE and USA">
+
+                            <!-- Rawalpindi HQ (label on top) -->
+                            <div class="map-pin map-pin--top" style="left:68.4%; top:49.2%">
+                                <span class="map-pin__tag">Rawalpindi, Pakistan</span><span class="map-pin__dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CTA ===================== -->
+        <section class="cta" id="cta">
+            <div class="cta__inner reveal">
+                <h2 class="cta__title">
+                    Your growth is <span class="muted">waiting.</span><br>Let's build it
+                    <span class="muted">together.</span>
+                </h2>
+                <p class="cta__sub">
+                    Free, itemized estimate within 48 hours. No obligation. Dynamic
+                    payment plans available.
+                </p>
+                <div class="cta__buttons">
+                    <a class="btn btn--black" href="tel:+923350535305">Call DeepTech</a>
+                    <a class="btn btn--white-solid" href="mailto:info@deeptechtechnologies.com">Request a quote</a>
+                </div>
+                <div class="cta__badges">
+                    <span>Full-Stack Dev</span><span>·</span><span>SEO &amp; PPC</span><span>·</span><span>24/7
+                        Support</span><span>·</span><span>Global Clients</span>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__top">
+                    <div class="footer__brand">
+                        <a class="logo" href="#top" aria-label="DeepTech home">
+                            <img class="logo__img" src="assets/img/deeptech-logo.webp" alt="DeepTech">
+                        </a>
+                        <p class="footer__tagline">
+                            A full-service software development and digital marketing agency
+                            engineering growth for businesses across the US, UAE, and beyond.
+                        </p>
+                        <div class="footer__socials">
+                            <a class="footer__social" href="mailto:info@deeptechtechnologies.com"
+                                aria-label="Email DeepTech">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M2 4h20c.552 0 1 .448 1 1v14c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V5c0-.552.448-1 1-1zm1.4 2L12 12.5 20.6 6H3.4zM3 8.2V18h18V8.2l-9 6.9-9-6.9z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://www.linkedin.com/company/deeptechtechnologies"
+                                target="_blank" rel="noopener" aria-label="DeepTech on LinkedIn">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://www.facebook.com/deeptechtechnologies/"
+                                target="_blank" rel="noopener" aria-label="DeepTech on Facebook">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0 23.4.6 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.098 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.674V1.326C24 .6 23.4 0 22.675 0z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://www.instagram.com/deeptech.technologies"
+                                target="_blank" rel="noopener" aria-label="DeepTech on Instagram">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            <a class="footer__social" href="https://wa.me/923350535305" target="_blank" rel="noopener"
+                                aria-label="Message DeepTech on WhatsApp">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.868-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.001 2C6.478 2 2 6.478 2 12.001c0 1.798.475 3.483 1.302 4.949L2.05 21.951l5.09-1.322A9.955 9.955 0 0 0 12.001 22C17.523 22 22 17.523 22 12.001 22 6.478 17.523 2 12.001 2z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Quick Links</h4>
+                        <ul class="footer__list">
+                            <li><a href="#top">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="index.html#portfolio">Portfolio</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#cta">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__heading">Services</h4>
+                        <ul class="footer__list">
+                            <li><a href="services/web-development.html">Web Development</a></li>
+                            <li><a href="services/native-mobile-apps.html">Mobile App Development</a></li>
+                            <li><a href="services/shopify-development.html">eCommerce &amp; CMS</a></li>
+                            <li><a href="services/ui-ux-design.html">UI/UX &amp; Branding</a></li>
+                            <li><a href="services/technical-on-page-seo.html">SEO &amp; Digital Marketing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col footer__col--wide">
+                        <h4 class="footer__heading">Get in Touch</h4>
+                        <ul class="footer__contact">
+                            <li>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span>Rawalpindi, Pakistan</span>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="m22 6-10 7L2 6" />
+                                </svg>
+                                <a href="mailto:info@deeptechtechnologies.com">info@deeptechtechnologies.com</a>
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+                                </svg>
+                                <a href="https://wa.me/923350535305" target="_blank" rel="noopener">+92 335 0535305</a>
+                            </li>
+                        </ul>
+
+                        <form class="footer__newsletter" id="newsletterForm">
+                            <label class="footer__newsletter-label" for="newsletterEmail">Subscribe for growth
+                                insights</label>
+                            <div class="footer__newsletter-row">
+                                <input type="email" id="newsletterEmail" name="email" placeholder="you@company.com"
+                                    required autocomplete="email">
+                                <button type="submit" aria-label="Subscribe">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14" />
+                                        <path d="m13 6 6 6-6 6" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="footer__newsletter-note" id="newsletterNote"></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <span>© 2026 DeepTech. All rights reserved.</span>
+                    <div class="footer__legal">
+                        <a href="#" data-legal="privacy">Privacy Policy</a><span>·</span><a href="#"
+                            data-legal="terms">Terms of Service</a>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+    <!-- ===================== LEGAL MODAL ===================== -->
+    <div class="blog-modal" id="legalModal" aria-hidden="true">
+        <div class="blog-modal__backdrop" data-close="1"></div>
+        <div class="blog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+            <button class="blog-modal__close" type="button" data-close="1" aria-label="Close">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
+            </button>
+            <div class="blog-modal__body legal-modal__body">
+                <h2 class="blog-modal__title" id="legalModalTitle"></h2>
+                <div class="blog-modal__meta" id="legalModalMeta"></div>
+                <div class="blog-modal__content" id="legalModalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== COOKIE BANNER ===================== -->
+    <div class="cookie-banner" id="cookieBanner" aria-hidden="true">
+        <div class="cookie-banner__inner">
+            <p class="cookie-banner__text">
+                We use cookies to improve your experience and analyze site traffic.
+                By clicking "Accept", you consent to our use of cookies.
+                Read our <a href="#" data-legal="privacy" class="cookie-banner__link">Privacy Policy</a>.
+            </p>
+            <div class="cookie-banner__actions">
+                <button type="button" class="cookie-btn cookie-btn--decline" id="declineCookies">Decline</button>
+                <button type="button" class="cookie-btn cookie-btn--accept" id="acceptCookies">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+
+</html>
